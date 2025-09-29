@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../../contexts/UserLoginContext.jsx';
 import './navbar.css';
 
 const Navbar = () => {
+  const { isAuthenticated, currentUser, logOut } = useAuth();
+  const navigate = useNavigate();
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -11,6 +16,13 @@ const Navbar = () => {
       });
     }
   };
+
+  const handleLogout = () => {
+    logOut();
+    navigate('/login');
+  };
+
+  const userName = currentUser?.displayName || currentUser?.email || 'User Profile';
 
   return (
     <nav className="navbar">
@@ -76,8 +88,32 @@ const Navbar = () => {
         </div>
         
         <div className="nav-actions">
-          <button className="nav-btn nav-btn-secondary">Sign In</button>
-          <button className="nav-btn nav-btn-primary">Get Started</button>
+          {isAuthenticated ? (
+            <>
+    <Link 
+      to="/profile" 
+      className="nav-profile-link" 
+      title={userName}
+    >
+     {userName}
+    </Link>
+    <button 
+      onClick={handleLogout} 
+      className="nav-btn nav-btn-primary"
+    >
+      Log Out
+    </button>
+  </>
+          ) : (
+            <>
+              <Link to="/login" className="nav-btn nav-btn-secondary">
+                Sign In
+              </Link>
+              <Link to="/login" className="nav-btn nav-btn-primary">
+                Get Started
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>

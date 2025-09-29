@@ -1,26 +1,30 @@
 import React from 'react';
 import './App.css';
+import {createBrowserRouter,RouterProvider} from 'react-router-dom';
 
 // Import all components
-import Navbar from './components/navbar/navbar';
-import Hero from './components/hero/hero';
-import Features from './components/features/features';
-import HowItWorks from './components/howItWorks/howItWorks';
-import Demo from './components/demo/demo';
-import Community from './components/community/community';
-import Footer from './components/footer/footer';
+import Home from './components/home/home';
+import Login from './components/login/login';
+import RootLayout from './RootLayout'
+import Profile from './components/profile/profile';
+import { UserLoginProvider } from './contexts/UserLoginContext';
 
 function App() {
+  const router=createBrowserRouter([
+    {
+      path:'/',
+      element:<RootLayout/>,
+      children:[
+        {index:true,element:<Home/>},
+        {path:"/login",element:<Login/>},
+        { path: "/profile", element: <Profile /> } 
+      ]
+    }
+  ])
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <Demo />
-      <Community />
-      <Footer />
-    </div>
+    <UserLoginProvider>
+        <RouterProvider router={router} />
+    </UserLoginProvider>
   );
 }
 
