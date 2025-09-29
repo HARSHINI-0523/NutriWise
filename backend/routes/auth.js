@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
-
+const { protect } = require('../middleware/authMiddleware');
 // Utility function to generate JWT
 const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET || "your_jwt_secret", {
@@ -70,6 +70,15 @@ router.post("/login", async (req, res) => {
     console.error("Login error:", error);
     res.status(500).json({ message: "Server error during login." });
   }
+});
+
+// @route  GET /api/auth/validate-session
+// @desc  Validate a user's session token
+// @access Private
+router.get("/validate-session", protect, (req, res) => {
+ // If the request reaches this point, the token has been successfully verified by the 'protect' middleware.
+ // We can simply return a success message.
+ res.status(200).json({ message: 'Session is valid', user: req.user });
 });
 
 module.exports = router;

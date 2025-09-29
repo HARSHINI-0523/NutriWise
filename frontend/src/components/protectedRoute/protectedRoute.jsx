@@ -1,14 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
-import { useAuth } from '../../contexts/UserLoginContext';
+// File: ProtectedRoute.jsx
 
-const protectedRoute = () => {
-  const { isAuthenticated, sessionToken, handleLogout } = useAuth();
+import React, { useEffect, useState } from "react";
+import { Navigate, Outlet } from "react-router-dom";
+import { useAuth } from "../../contexts/UserLoginContext";
+
+const ProtectedRoute = () => {
+  const { currentUser, isAuthenticated, logOut } = useAuth();
   const [isVerifying, setIsVerifying] = useState(true);
   const [isValidSession, setIsValidSession] = useState(false);
 
   useEffect(() => {
     const validateSession = async () => {
+      const sessionToken = currentUser?.token;
+
       if (!sessionToken) {
         setIsValidSession(false);
         setIsVerifying(false);
@@ -16,26 +20,27 @@ const protectedRoute = () => {
       }
 
       try {
-        const response = await fetch('https://studysphere-n4up.onrender.com/api/users/validate-session', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ sessionToken }),
-        });
+        // Change this URL to your local backend's validation endpoint
+        const response = await fetch(
+          "http://localhost:5000/api/auth/validate-session",
+          {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${sessionToken}`,
+            },
+          }
+        );
 
         if (response.ok) {
-          // Session is valid, no need to update AuthContext as it's already populated
           setIsValidSession(true);
         } else {
-          // Session invalid or expired
-          console.warn('Session validation failed:', response.status);
-          handleLogout(); // Clear local storage and context
+          console.warn("Session validation failed:", response.status);
+          logOut();
           setIsValidSession(false);
         }
       } catch (error) {
-        console.error('Error validating session:', error);
-        handleLogout(); // Clear local storage and context on network error
+        console.error("Error validating session:", error);
+        logOut();
         setIsValidSession(false);
       } finally {
         setIsVerifying(false);
@@ -43,24 +48,30 @@ const protectedRoute = () => {
     };
 
     validateSession();
-  }, [sessionToken, handleLogout]);
+  }, [currentUser, logOut]);
 
   if (isVerifying) {
-    // Optionally render a loading spinner or message while verifying session
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#1a1a2e', color: '#e0e0e0' }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          backgroundColor: "#1a1a2e",
+          color: "#e0e0e0",
+        }}
+      >
         <h2>Verifying session...</h2>
       </div>
     );
   }
 
-  // If not authenticated or session is invalid, redirect to auth page
   if (!isAuthenticated || !isValidSession) {
     return <Navigate to="/login" replace />;
   }
 
-  // If authenticated and session is valid, render the child routes
   return <Outlet />;
 };
 
-export default protectedRoute;
+export default ProtectedRoute;
