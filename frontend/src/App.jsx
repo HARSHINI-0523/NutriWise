@@ -7,7 +7,9 @@ import Home from './components/home/home';
 import Login from './components/login/login';
 import RootLayout from './RootLayout'
 import Profile from './components/profile/profile';
+import UserDetailsForm from './components/userDetailsForm/userDetailsForm';
 import { UserLoginProvider } from './contexts/UserLoginContext';
+import ProtectedRoute from './components/protectedRoute/protectedRoute';
 
 function App() {
   const router=createBrowserRouter([
@@ -17,8 +19,20 @@ function App() {
       children:[
         {index:true,element:<Home/>},
         {path:"/login",element:<Login/>},
-        { path: "/profile", element: <Profile /> } 
       ]
+    },
+    {
+      element: <ProtectedRoute />,
+      children: [
+        {
+          path: "/profile",
+          element: <Profile />,
+        },
+        {
+          path: "/user-details-form",
+          element: <UserDetailsForm />,
+        },
+      ],
     }
   ])
   return (

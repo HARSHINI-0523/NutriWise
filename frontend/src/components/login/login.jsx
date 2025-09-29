@@ -38,13 +38,14 @@ const Login = () => {
         // Attempt Sign In
         await signIn(email, password);
         // Navigation handled inside context on success
+        navigate('/profile');
       } else {
         // Attempt Sign Up
         if (password !== confirmPassword) {
           throw new Error("Passwords do not match.");
         }
         await signUp(email, password, name);
-        // Navigation handled inside context on success
+        navigate('/user-details-form')
       }
     } catch (err) {
       console.error("Auth process error:", err.message);
