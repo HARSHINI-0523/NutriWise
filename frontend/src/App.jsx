@@ -9,6 +9,7 @@ import RootLayout from './RootLayout'
 import Profile from './components/profile/profile';
 import UserDetailsForm from './components/userDetailsForm/userDetailsForm';
 import ProtectedRoute from './components/protectedRoute/protectedRoute';
+import UploadReport from './components/uploadReport/UploadReport.jsx';
 
 //Contexts
 import { UserLoginProvider } from './contexts/UserLoginContext';
@@ -41,7 +42,7 @@ const DietPlansPage = () => <h1>Diet Plans Content</h1>;
         },
        
             { path: "/reports/my", element: <ReportsPage /> },
-            { path: "/reports/upload", element: <ReportsPage /> },
+            { path: "/reports/upload", element: <UploadReport /> },
             { path: "/reports/analysis", element: <ReportsPage /> },
 
             
