@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { useAuth } from '../../contexts/UserLoginContext.jsx';
 import './login.css'; 
 import { useNavigate } from 'react-router-dom';
+//Contexts
+import { useAuth } from '../../contexts/UserLoginContext.jsx';
+import { useToast } from '../../contexts/ToastContext.jsx';
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -11,8 +13,9 @@ const Login = () => {
     confirmPassword: '',
     name: ''
   });
-  const [error, setError] = useState('');
+  // const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { showToast } = useToast();  //toast context
 
   // Use the authentication functions from the context
   const { signUp, signIn, signInWithGoogle } = useAuth();
@@ -23,12 +26,12 @@ const Login = () => {
       ...formData,
       [e.target.name]: e.target.value
     });
-    setError(''); // Clear error on input change
+    //setError(''); // Clear error on input change
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('');
+    //setError('');
     setIsSubmitting(true);
 
     const { email, password, confirmPassword, name } = formData;
@@ -39,6 +42,7 @@ const Login = () => {
         await signIn(email, password);
         // Navigation handled inside context on success
         navigate('/profile');
+        showToast("Login successful!", "success");
       } else {
         // Attempt Sign Up
         if (password !== confirmPassword) {
@@ -46,11 +50,13 @@ const Login = () => {
         }
         await signUp(email, password, name);
         navigate('/user-details-form')
+        showToast("Account created successfully!", "success");
       }
     } catch (err) {
       console.error("Auth process error:", err.message);
       // Display error message from the API or local validation
-      setError(err.message || 'An unknown error occurred during authentication.');
+      //setError(err.message || 'An unknown error occurred during authentication.');
+      showToast(err.message || 'An unknown error occurred.', "error");
     } finally {
       setIsSubmitting(false);
     }
@@ -63,7 +69,8 @@ const Login = () => {
         await signInWithGoogle();
       } catch (err) {
         // Display warning about custom API limitation
-        setError(err.message || "Google Sign-in is not implemented on the custom backend.");
+       // setError(err.message || "Google Sign-in is not implemented on the custom backend.");
+       showToast(err.message || "Google Sign-in is not implemented.", "error");
       }
   };
 
@@ -76,11 +83,11 @@ const Login = () => {
         </div>
         
         {/* Error Message Display */}
-        {error && (
+        {/* {error && (
             <div className="error-message p-3 mb-4 rounded-lg bg-red-100 text-red-700 border border-red-300 font-medium">
                 {error}
             </div>
-        )}
+        )} */}
 
         <form onSubmit={handleSubmit} className="login-form">
           {/* Full Name field for Sign Up */}

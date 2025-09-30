@@ -8,8 +8,11 @@ import Login from './components/login/login';
 import RootLayout from './RootLayout'
 import Profile from './components/profile/profile';
 import UserDetailsForm from './components/userDetailsForm/userDetailsForm';
-import { UserLoginProvider } from './contexts/UserLoginContext';
 import ProtectedRoute from './components/protectedRoute/protectedRoute';
+
+//Contexts
+import { UserLoginProvider } from './contexts/UserLoginContext';
+import { ToastProvider } from './contexts/ToastContext.jsx';
 
 function App() {
   const router=createBrowserRouter([
@@ -37,7 +40,9 @@ function App() {
   ])
   return (
     <UserLoginProvider>
+      <ToastProvider>
         <RouterProvider router={router} />
+        </ToastProvider>
     </UserLoginProvider>
   );
 }
