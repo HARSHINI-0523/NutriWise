@@ -62,7 +62,7 @@
     border-radius: 6px;
 }
 
-.upload-btn {
+.report-upload-btn {
     width: 100%;
     padding: 15px;
     background-color: #00796b;
@@ -74,14 +74,16 @@
     cursor: pointer;
     transition: background-color 0.3s, opacity 0.3s, transform 0.1s;
     box-shadow: 0 4px 10px rgba(0, 121, 107, 0.3);
+    margin-bottom: 10px;
 }
 
-.upload-btn:hover:not(:disabled) {
+.report-upload-btn:hover:not(:disabled) {
     background-color: #006056;
 }
 
-.upload-btn:disabled {
+.report-upload-btn:disabled {
     background-color: #aeb5bb;
     cursor: not-allowed;
     opacity: 0.8;
 }
+
