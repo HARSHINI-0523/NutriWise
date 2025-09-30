@@ -13,7 +13,7 @@ const Login = () => {
     confirmPassword: '',
     name: ''
   });
-  // const [error, setError] = useState('');
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { showToast } = useToast();  //toast context
 
@@ -26,12 +26,10 @@ const Login = () => {
       ...formData,
       [e.target.name]: e.target.value
     });
-    //setError(''); // Clear error on input change
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //setError('');
     setIsSubmitting(true);
 
     const { email, password, confirmPassword, name } = formData;
@@ -55,7 +53,6 @@ const Login = () => {
     } catch (err) {
       console.error("Auth process error:", err.message);
       // Display error message from the API or local validation
-      //setError(err.message || 'An unknown error occurred during authentication.');
       showToast(err.message || 'An unknown error occurred.', "error");
     } finally {
       setIsSubmitting(false);
@@ -69,7 +66,6 @@ const Login = () => {
         await signInWithGoogle();
       } catch (err) {
         // Display warning about custom API limitation
-       // setError(err.message || "Google Sign-in is not implemented on the custom backend.");
        showToast(err.message || "Google Sign-in is not implemented.", "error");
       }
   };
@@ -82,13 +78,6 @@ const Login = () => {
           <p>{isLogin ? 'Sign in to your NutriWise account' : 'Join thousands of users transforming their health'}</p>
         </div>
         
-        {/* Error Message Display */}
-        {/* {error && (
-            <div className="error-message p-3 mb-4 rounded-lg bg-red-100 text-red-700 border border-red-300 font-medium">
-                {error}
-            </div>
-        )} */}
-
         <form onSubmit={handleSubmit} className="login-form">
           {/* Full Name field for Sign Up */}
           {!isLogin && (
@@ -206,7 +195,6 @@ const Login = () => {
               className="switch-btn"
               onClick={() => {
                   setIsLogin(!isLogin);
-                  setError(''); // Clear error on switch
               }}
               disabled={isSubmitting}
             >
