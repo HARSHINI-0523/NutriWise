@@ -13,8 +13,12 @@ import ProtectedRoute from './components/protectedRoute/protectedRoute';
 //Contexts
 import { UserLoginProvider } from './contexts/UserLoginContext';
 import { ToastProvider } from './contexts/ToastContext.jsx';
+import { SidebarProvider } from './contexts/SidebarContext.jsx';
 
 function App() {
+
+  const ReportsPage = () => <h1>Reports Content</h1>;
+const DietPlansPage = () => <h1>Diet Plans Content</h1>;
   const router=createBrowserRouter([
     {
       path:'/',
@@ -35,13 +39,23 @@ function App() {
           path: "/user-details-form",
           element: <UserDetailsForm />,
         },
+       
+            { path: "/reports/my", element: <ReportsPage /> },
+            { path: "/reports/upload", element: <ReportsPage /> },
+            { path: "/reports/analysis", element: <ReportsPage /> },
+
+            
+            { path: "/diet-plans/generate", element: <DietPlansPage /> },
+            { path: "/diet-plans/weekly", element: <DietPlansPage /> },
       ],
     }
   ])
   return (
     <UserLoginProvider>
       <ToastProvider>
+        <SidebarProvider>
         <RouterProvider router={router} />
+        </SidebarProvider>
         </ToastProvider>
     </UserLoginProvider>
   );

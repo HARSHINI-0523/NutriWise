@@ -1,8 +1,8 @@
-// File: ProtectedRoute.jsx
-
 import React, { useEffect, useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { useAuth } from "../../contexts/UserLoginContext";
+import Header from "../header/Header";
+import Sidebar from "../sidebar/Sidebar";
 
 const ProtectedRoute = () => {
   const { currentUser, isAuthenticated, logOut } = useAuth();
@@ -71,7 +71,17 @@ const ProtectedRoute = () => {
     return <Navigate to="/login" replace />;
   }
 
-  return <Outlet />;
+  return (
+  <div className="app-container">
+      <Header />
+      <div className="main-content-wrapper">
+        <Sidebar />
+        <main className="main-content">
+          <Outlet />
+        </main>
+      </div>
+    </div>
+  );
 };
 
 export default ProtectedRoute;
