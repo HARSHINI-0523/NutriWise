@@ -1,0 +1,10 @@
+# requirements.txt
+
+fastapi
+uvicorn[standard]
+pandas
+openpyxl
+numpy
+
+
+#pip install -r requirements.txt
