@@ -27,6 +27,7 @@ const sidebarData = {
         { name: 'User Details Form', path: '/user-details-form', icon: icons['User Details Form'] },
         { name: 'Weekly Plan', path: '/diet-plans/weekly', icon: icons['Weekly Plan'] },
     ],
+    
 };
 
 const Sidebar = () => {

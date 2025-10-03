@@ -1,34 +1,34 @@
-import React from 'react';
-import './App.css';
-import {createBrowserRouter,RouterProvider} from 'react-router-dom';
+import React from "react";
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Import all components
-import Home from './components/home/home';
-import Login from './components/login/login';
-import RootLayout from './RootLayout'
-import Profile from './components/profile/profile';
-import UserDetailsForm from './components/userDetailsForm/userDetailsForm';
-import ProtectedRoute from './components/protectedRoute/protectedRoute';
-import UploadReport from './components/uploadReport/UploadReport.jsx';
-import MyReports from './components/myReports/MyReports.jsx';
+import Home from "./components/home/home";
+import Login from "./components/login/login";
+import RootLayout from "./RootLayout";
+import Profile from "./components/profile/profile";
+import UserDetailsForm from "./components/userDetailsForm/userDetailsForm";
+import ProtectedRoute from "./components/protectedRoute/protectedRoute";
+import UploadReport from "./components/uploadReport/UploadReport.jsx";
+import MyReports from "./components/myReports/MyReports.jsx";
+import FriendsPage from "./components/friends/FriendsPage.jsx";
 
 //Contexts
-import { UserLoginProvider } from './contexts/UserLoginContext';
-import { ToastProvider } from './contexts/ToastContext.jsx';
-import { SidebarProvider } from './contexts/SidebarContext.jsx';
+import { UserLoginProvider } from "./contexts/UserLoginContext";
+import { ToastProvider } from "./contexts/ToastContext.jsx";
+import { SidebarProvider } from "./contexts/SidebarContext.jsx";
 
 function App() {
-
   const ReportsPage = () => <h1>Reports Content</h1>;
-const DietPlansPage = () => <h1>Diet Plans Content</h1>;
-  const router=createBrowserRouter([
+  const DietPlansPage = () => <h1>Diet Plans Content</h1>;
+  const router = createBrowserRouter([
     {
-      path:'/',
-      element:<RootLayout/>,
-      children:[
-        {index:true,element:<Home/>},
-        {path:"/login",element:<Login/>},
-      ]
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "/login", element: <Login /> },
+      ],
     },
     {
       element: <ProtectedRoute />,
@@ -41,24 +41,24 @@ const DietPlansPage = () => <h1>Diet Plans Content</h1>;
           path: "/user-details-form",
           element: <UserDetailsForm />,
         },
-       
-            { path: "/reports/my", element: <MyReports /> },
-            { path: "/reports/upload", element: <UploadReport /> },
-            { path: "/reports/analysis", element: <ReportsPage /> },
 
-            
-            { path: "/diet-plans/generate", element: <DietPlansPage /> },
-            { path: "/diet-plans/weekly", element: <DietPlansPage /> },
+        { path: "/reports/my", element: <MyReports /> },
+        { path: "/reports/upload", element: <UploadReport /> },
+        { path: "/reports/analysis", element: <ReportsPage /> },
+
+        { path: "/diet-plans/generate", element: <DietPlansPage /> },
+        { path: "/diet-plans/weekly", element: <DietPlansPage /> },
+        {path:"/friends",element:<FriendsPage/>}
       ],
-    }
-  ])
+    },
+  ]);
   return (
     <UserLoginProvider>
       <ToastProvider>
         <SidebarProvider>
-        <RouterProvider router={router} />
+          <RouterProvider router={router} />
         </SidebarProvider>
-        </ToastProvider>
+      </ToastProvider>
     </UserLoginProvider>
   );
 }

@@ -49,6 +49,7 @@ const Header = () => {
                     </Link>
                     <Link to="/challenges">Challenges</Link>
                     <Link to="/community">Community</Link>
+                    <Link to="/friends">Friends</Link>
                 </div>
                 
                 <div className="nav-actions">

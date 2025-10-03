@@ -3,6 +3,8 @@ const router = express.Router();
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
 const { protect } = require('../middleware/authMiddleware');
+
+
 // Utility function to generate JWT
 const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET || "your_jwt_secret", {
@@ -80,5 +82,7 @@ router.get("/validate-session", protect, (req, res) => {
  // We can simply return a success message.
  res.status(200).json({ message: 'Session is valid', user: req.user });
 });
+
+
 
 module.exports = router;

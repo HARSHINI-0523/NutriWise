@@ -136,7 +136,7 @@ const UserDetailsForm = () => {
 
           {/* Vitals */}
           <fieldset className="form-section">
-            <legend>3. Vitals (Height & Weight)</legend>
+            <legend>3. Height & Weight</legend>
             <div className="input-row">
               <div className="form-group">
                 <label htmlFor="height">Height (cm):</label>
