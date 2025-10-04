@@ -2,11 +2,14 @@ import React, { useState, useEffect, useCallback } from "react";
 import { fetchFriends, fetchReceivedRequests, respondToRequest, fetchSuggestions, searchUsers, sendFriendRequest } from "../../services/api";
 import { useAuth } from "../../contexts/UserLoginContext"; 
 import { useToast } from '../../contexts/ToastContext';
+import { useSidebar } from '../../contexts/SidebarContext';
 import "./FriendsPage.css";
 
 const FriendsPage = () => {
   
   const { userId, isAuthenticated } = useAuth();
+  const { setSidebarMode } = useSidebar();
+
   const { showToast } = useToast();
   const [friends, setFriends] = useState([]);
   const [requests, setRequests] = useState([]);
@@ -16,7 +19,10 @@ const FriendsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   
-
+  useEffect(() => {
+    // Set the active sidebar to null, which will cause it to unmount
+    setSidebarMode(null);
+  }, [setSidebarMode]);
   const handleSearch = async (query) => {
     setSearchQuery(query);
     if (query.trim() === "") {

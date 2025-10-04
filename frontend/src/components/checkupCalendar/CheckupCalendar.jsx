@@ -9,7 +9,8 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./CheckupCalendar.css"; // We'll create this file for custom styles
 import enUS from 'date-fns/locale/en-US';
 import { useAuth } from "../../contexts/UserLoginContext";
-// You will need to create these functions in your services/api.js file
+import { useSidebar } from '../../contexts/SidebarContext';
+
 import { getAppointments, createAppointment, deleteAppointment } from "../../services/api";
 
 const locales = { "en-US": enUS };
@@ -24,6 +25,8 @@ const localizer = dateFnsLocalizer({
 
 const CheckupCalendar = () => {
   const { userId, isAuthenticated } = useAuth();
+  const { setSidebarMode } = useSidebar();
+
   const [events, setEvents] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [selectedSlot, setSelectedSlot] = useState(null);
@@ -31,6 +34,10 @@ const CheckupCalendar = () => {
   const [date, setDate] = useState(new Date());
   const [view, setView] = useState(Views.MONTH);
 
+  useEffect(() => {
+    // Set the active sidebar to null, which will cause it to unmount
+    setSidebarMode(null);
+  }, [setSidebarMode]);
   // Fetch appointments when the component mounts
   const fetchEvents = useCallback(async () => {
     if (isAuthenticated) {
