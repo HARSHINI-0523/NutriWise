@@ -4,7 +4,7 @@ import axios from "axios";
 // ✅ Define base URLs for different parts of your API
 const FRIENDSHIP_API_URL = "http://localhost:5000/api/friendships";
 const USER_API_URL = "http://localhost:5000/api/users";
-
+const APPOINTMENT_API_URL = "http://localhost:5000/api/appointments";
 // --- Existing Functions ---
 
 export const fetchFriends = (userId) => {
@@ -39,4 +39,27 @@ export const searchUsers = (userId, query) => {
  */
 export const sendFriendRequest = (requesterId, recipientId) => {
   return axios.post(`${FRIENDSHIP_API_URL}/request/send`, { requesterId, recipientId });
+};
+
+
+/**
+ * Gets all appointments for a user.
+ */
+export const getAppointments = (userId) => {
+  return axios.get(`${APPOINTMENT_API_URL}/${userId}`);
+};
+
+/**
+ * Creates a new appointment.
+ * @param {object} appointmentData - { title, start, end, user, notes }
+ */
+export const createAppointment = (appointmentData) => {
+  return axios.post(APPOINTMENT_API_URL, appointmentData);
+};
+
+/**
+ * Deletes an appointment by its ID.
+ */
+export const deleteAppointment = (appointmentId) => {
+  return axios.delete(`${APPOINT-MENT_API_URL}/${appointmentId}`);
 };

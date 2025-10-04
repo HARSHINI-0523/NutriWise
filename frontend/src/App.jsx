@@ -12,6 +12,7 @@ import ProtectedRoute from "./components/protectedRoute/protectedRoute";
 import UploadReport from "./components/uploadReport/UploadReport.jsx";
 import MyReports from "./components/myReports/MyReports.jsx";
 import FriendsPage from "./components/friends/FriendsPage.jsx";
+import CheckupCalendar from "./components/checkupCalendar/CheckupCalendar.jsx";
 
 //Contexts
 import { UserLoginProvider } from "./contexts/UserLoginContext";
@@ -48,7 +49,8 @@ function App() {
 
         { path: "/diet-plans/generate", element: <DietPlansPage /> },
         { path: "/diet-plans/weekly", element: <DietPlansPage /> },
-        {path:"/friends",element:<FriendsPage/>}
+        {path:"/friends",element:<FriendsPage/>},
+        {path:"/checkup-calendar",element:<CheckupCalendar/>}
       ],
     },
   ]);

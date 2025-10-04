@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/UserLoginContext.jsx';
-import { useSidebar } from '../../contexts/SidebarContext'; // NEW
+import { useSidebar } from '../../contexts/SidebarContext'; 
+import { FaRegCalendarAlt } from "react-icons/fa";
+
 import './header.css';
 
 const Header = () => {
@@ -28,10 +30,12 @@ const Header = () => {
         <nav className="navbar">
             <div className="nav-container">
                 <div className="nav-logo">
+                    
                     <div className="logo-icon">
-                        <img src="/nutriwise.jpg" alt="NutriWise Logo" />
+                       <Link to="/"> <img src="/nutriwise.jpg" alt="NutriWise Logo" />  </Link>
                     </div>
-                    <span className="logo-text">NutriWise</span>
+                    <Link to="/"><span className="logo-text">NutriWise</span>
+                    </Link>
                 </div>
                 
                 <div className="nav-links">
@@ -68,6 +72,10 @@ const Header = () => {
                             >
                                 Log Out
                             </button>
+                            <Link to="/checkup-calendar" className="nav-btn nav-btn-secondary">
+                                <FaRegCalendarAlt />
+                            </Link>
+
                         </>
                     ) : (
                         <>

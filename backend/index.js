@@ -14,6 +14,7 @@ const reportRoutes = require("./routes/reportRoutes");
 const userDetailsRouter = require("./routes/userDetails");
 const friendshipRoutes = require("./routes/friendshipRoutes");
 const userRoutes = require("./routes/userRoutes");
+const appointmentRoutes = require("./routes/appointmentRoutes");
 
 // Middleware
 app.use(cors());
@@ -25,6 +26,7 @@ app.use("/api/reports", reportRoutes);
 app.use("/api/user-details", userDetailsRouter);
 app.use("/api/friendships", friendshipRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/appointments", appointmentRoutes);
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
