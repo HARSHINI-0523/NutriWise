@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuth } from "../../contexts/UserLoginContext.jsx";
 import { useToast } from "../../contexts/ToastContext.jsx";
 import "./UploadReport.css";
+import api from "../../api/axios.js";
 
 const reportTypes = [
   "Blood Test",
@@ -41,9 +42,14 @@ const UploadReport = () => {
       return;
     }
 
-    // **CHECK 1:** Make sure the user is authenticated and has a token
-    if (!currentUser || !currentUser.token) {
-      showToast("You must be logged in to upload a report.", "error");
+    // // **CHECK 1:** Make sure the user is authenticated and has a token
+    // if (!currentUser || !currentUser.token) {
+    //   showToast("You must be logged in to upload a report.", "error");
+    //   return;
+    // }
+
+    if (!currentUser) {
+      showToast("You must be logged in", "error");
       return;
     }
 
@@ -54,29 +60,12 @@ const UploadReport = () => {
     formData.append("reportType", reportType);
 
     try {
-      const response = await fetch(UPLOAD_API_ENDPOINT, {
-        method: "POST",
-        // **SOLUTION:** Add the Authorization header
-        headers: {
-          Authorization: `Bearer ${currentUser.token}`,
-        },
-        body: formData,
-      });
-
-      const result = await response.json();
-
-      if (response.ok) {
-        showToast(`File uploaded successfully!`, "success", 5000);
-        setFile(null);
-        setReportType(reportTypes[0]);
-      } else {
-        const errorMessage =
-          result.message || "An unexpected error occurred during upload.";
-        showToast(errorMessage, "error");
-      }
-    } catch (error) {
-      console.error("Upload failed:", error);
-      showToast("Network error: Could not reach the upload server.", "error");
+      await api.post("/reports/upload", formData);
+      showToast("File uploaded successfully!", "success");
+      setFile(null);
+      setReportType(reportTypes[0]);
+    } catch (err) {
+      showToast(err.response?.data?.message || "Upload failed", "error");
     } finally {
       setIsLoading(false);
     }

@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useAuth } from '../../contexts/UserLoginContext.jsx';
-import { useToast } from '../../contexts/ToastContext.jsx';
-import './MyReports.css';
+import React, { useState, useEffect } from "react";
+import { useAuth } from "../../contexts/UserLoginContext.jsx";
+import { useToast } from "../../contexts/ToastContext.jsx";
+import "./MyReports.css";
+import api from "../../api/axios.js";
 
 const MyReports = () => {
   const { currentUser } = useAuth();
@@ -13,42 +14,32 @@ const MyReports = () => {
 
   useEffect(() => {
     const fetchReports = async () => {
-      // Check if user is logged in
-      if (!currentUser || !currentUser.token) {
-        setIsLoading(false);
-        setError("You must be logged in to view your reports.");
-        return;
-      }
+      // // Check if user is logged in
+      // if (!currentUser || !currentUser.token) {
+      //   setIsLoading(false);
+      //   setError("You must be logged in to view your reports.");
+      //   return;
+      // }
+      // if (!currentUser) {
+      //   showToast("You must be logged in", "error");
+      //   return;
+      // }
 
       try {
-        const response = await fetch('http://localhost:5000/api/reports/me', {
-          method: 'GET',
-          headers: {
-            'Authorization': `Bearer ${currentUser.token}`,
-            'Content-Type': 'application/json',
-          },
-        });
-
-        if (!response.ok) {
-          const errorData = await response.json();
-          throw new Error(errorData.message || 'Failed to fetch reports.');
-        }
-
-        const data = await response.json();
-        setReports(data);
-
+        const res = await api.get("/reports/me");
+        setReports(res.data);
       } catch (err) {
-        setError(err.message);
-        showToast(err.message, "error");
-        console.error("Failed to fetch reports:", err);
-
+        showToast(
+          err.response?.data?.message || "Failed to load reports",
+          "error"
+        );
       } finally {
         setIsLoading(false);
       }
     };
 
     fetchReports();
-  }, [currentUser, showToast]); // Re-run effect if currentUser or showToast changes
+  }, [currentUser, showToast]); 
 
   if (isLoading) {
     return <div className="loading-container">Loading your reports...</div>;
@@ -80,7 +71,12 @@ const MyReports = () => {
             <p className="report-date">
               Uploaded on: {new Date(report.createdAt).toLocaleDateString()}
             </p>
-            <a href={report.fileURL} target="_blank" rel="noopener noreferrer" className="report-link">
+            <a
+              href={report.fileURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="report-link"
+            >
               View Report
             </a>
           </div>

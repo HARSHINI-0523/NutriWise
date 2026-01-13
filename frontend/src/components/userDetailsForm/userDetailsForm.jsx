@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import api from "../../api/axios";
 import './userDetailsForm.css';
 
 const UserDetailsForm = () => {
@@ -56,7 +56,7 @@ const UserDetailsForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/user-details', formData); // Corrected URL
+      const response = await api.post('/user-details', formData); // Corrected URL
       setMessage(response.data.message);
 
       // Reset form after successful submission

@@ -13,7 +13,7 @@ import UploadReport from "./components/uploadReport/UploadReport.jsx";
 import MyReports from "./components/myReports/MyReports.jsx";
 import FriendsPage from "./components/friends/FriendsPage.jsx";
 import CheckupCalendar from "./components/checkupCalendar/CheckupCalendar.jsx";
-
+import VerifyEmail from "./components/verifyEmail/VerifyEmail.jsx";
 //Contexts
 import { UserLoginProvider } from "./contexts/UserLoginContext";
 import { ToastProvider } from "./contexts/ToastContext.jsx";
@@ -29,6 +29,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "/login", element: <Login /> },
+        { path: "/verify-email", element: <VerifyEmail /> },
       ],
     },
     {
@@ -42,6 +43,7 @@ function App() {
           path: "/user-details-form",
           element: <UserDetailsForm />,
         },
+        
 
         { path: "/reports/my", element: <MyReports /> },
         { path: "/reports/upload", element: <UploadReport /> },

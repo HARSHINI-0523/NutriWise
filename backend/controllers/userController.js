@@ -14,17 +14,28 @@ exports.searchUsers = async (req, res) => {
     // This query uses the external search index. It does not depend on any User model changes.
     const users = await User.aggregate([
       {
-        $search: {
-          index: "user_search_index", // The name of the index you just created
-          autocomplete: {
-            query: query,
-            path: "name", // We're targeting the 'name' field for the search
-            fuzzy: {
-              maxEdits: 1,      // Allows for one character typo/difference
-              prefixLength: 2,  // The first 2 characters must be correct
-            },
-          },
-        },
+       $search: {
+  index: "user_search_index",
+  compound: {
+    should: [
+      {
+        autocomplete: {
+          query,
+          path: "name",
+          fuzzy: { maxEdits: 1 }
+        }
+      },
+      {
+        autocomplete: {
+          query,
+          path: "email",
+          fuzzy: { maxEdits: 1 }
+        }
+      }
+    ]
+  }
+}
+
       },
       {
         $match: {
