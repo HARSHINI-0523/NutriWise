@@ -19,7 +19,7 @@ const userDetailsRouter = require("./routes/userDetails");
 const friendshipRoutes = require("./routes/friendshipRoutes");
 const userRoutes = require("./routes/userRoutes");
 const appointmentRoutes = require("./routes/appointmentRoutes");
-
+const dietRoutes = require("./routes/diet.routes");
 // Middleware
 app.use(cors({
   origin: "http://localhost:5173",
@@ -40,7 +40,7 @@ app.use("/api/user-details", userDetailsRouter);
 app.use("/api/friendships", friendshipRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/appointments", appointmentRoutes);
-
+app.use("/api/diet", dietRoutes);
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,

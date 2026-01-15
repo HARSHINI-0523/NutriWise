@@ -5,6 +5,7 @@ uvicorn[standard]
 pandas
 openpyxl
 numpy
-
+xgboost
+scikit-learn
 
 #pip install -r requirements.txt

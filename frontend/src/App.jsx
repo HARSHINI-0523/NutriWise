@@ -14,6 +14,7 @@ import MyReports from "./components/myReports/MyReports.jsx";
 import FriendsPage from "./components/friends/FriendsPage.jsx";
 import CheckupCalendar from "./components/checkupCalendar/CheckupCalendar.jsx";
 import VerifyEmail from "./components/verifyEmail/VerifyEmail.jsx";
+import GenerateDietPlan from "./components/generateDietPlan/GenerateDietPlan.jsx";
 //Contexts
 import { UserLoginProvider } from "./contexts/UserLoginContext";
 import { ToastProvider } from "./contexts/ToastContext.jsx";
@@ -49,7 +50,7 @@ function App() {
         { path: "/reports/upload", element: <UploadReport /> },
         { path: "/reports/analysis", element: <ReportsPage /> },
 
-        { path: "/diet-plans/generate", element: <DietPlansPage /> },
+        { path: "/diet-plans/generate", element: <GenerateDietPlan /> },
         { path: "/diet-plans/weekly", element: <DietPlansPage /> },
         {path:"/friends",element:<FriendsPage/>},
         {path:"/checkup-calendar",element:<CheckupCalendar/>}
