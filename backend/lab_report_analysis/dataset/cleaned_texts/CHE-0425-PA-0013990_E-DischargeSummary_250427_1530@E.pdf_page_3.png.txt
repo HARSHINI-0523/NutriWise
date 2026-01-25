@@ -1,0 +1,136 @@
+RV MAMATA HOSPITAL
+OOM NO 1 2.GROUND FLOOR.PLOT NO P 43.PHASE 2. SRV MAMATA HOSPITAL.MIDC.DOMBIVALI EAST . DIST
+HANE
+421203
+INVESTIGATION
+AUSTRALIAN
+NON
+Creatnine
+0 8 mg/dl.
+09.24 PM
+REACTIVE
+09:24 PM
+HCV Rapid
+NON
+09.24 PM
+REACTIVE
+COMPLETE BLOOD
+24-APR
+ELECTROLYTES
+24-APR
+COUNT CBC
+09:22 PM
+09:24 PM
+Red Cell Count
+4.51
+CIILORIDE. SERUM
+100.0
+xlO6 /ul
+mmol/L
+POTASSIUM. SERUM
+3.9
+Haemoglobin
+13.1 g/dL
+mmol/L
+Mlaematocrit
+38.6
+SODIUM. SERUM
+136.0
+MCV
+85.6 ML
+mmol/L
+MCII
+29.0 pg
+MIV AND II RAPID
+24-APR
+09:24 PM
+MCHC
+33.9
+HIV .1
+NON
+RDW SD
+40.1
+REACTIVE
+Total WBC Count
+6.45 10 3
+cells/ul
+HIV-2
+NON
+REACTIVE
+Platelet Count
+321 10 3
+cells/ul
+PROTHROMBIN TIME
+24-APR
+Ncutrophils
+55.2
+PT
+09.23 PM
+Eosinophils
+1.4
+Control
+15.7
+Lymphocytes
+36.1
+Ratio
+0.98
+Monocytes
+6.8
+ISI Value
+1.1
+Basophils
+0.5
+INR Value
+0.98
+RDW CV
+12.7
+Prothrombin Time
+15.6
+Mean Platelet
+8.4 fL
+UKINE ROUTINE
+25-APR
+voluame MPV
+EXAMINATTON
+4:02 PM
+Platelet Distribution
+8.2
+Colour
+Pale
+Widlh PDW
+yellow
+Plateletocrt PCT
+0.27
+Appearance
+Clear
+P.LCR
+12.0
+Specific gravity
+1.015
+RBC Morphology
+Normocyll
+pH Reaction
+6.5
+Normochr
+Occult Blood
+Absent
+omic
+Bile Salts
+Absent
+WBC
+Morphology
+Normal
+Urobilinogen
+Absent
+Platelets on Smear
+Adequate
+Ketone
+Absent
+Protem
+Absent
+Glucose
+Absent
+NIKHIL MAKARAND VAIDYA
+SRVD-9491
+g/d
+DOMBIVLI

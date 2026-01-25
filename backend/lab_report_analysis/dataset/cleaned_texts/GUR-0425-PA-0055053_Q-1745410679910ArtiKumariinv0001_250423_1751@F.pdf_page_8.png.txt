@@ -1,0 +1,117 @@
+DIAGNOSTIC REPORT
+Diagnostics Report
+MC-5837
+agilugz
+Fortis
+diagnostics
+PATIENT
+VASKI
+HPATENT ID
+FH.13424637
+12:56.00
+SECTOR 10. A. VASHI.
+SECTOR 10. MINI SEA
+SHORE ROAD.SECTOR 10. A. VASHI.
+CLIENT PATIENT ID: UID:13424637
+RECEIVED
+12:58:13
+NAVI MUMBAI 400703
+ABHA NO
+REPORTED
+16:31.49
+022 39199222
+CLINICAL INFORMATION
+UID:13424637 REQNO-21208267
+IPD-4B
+Test Report Status
+Final
+Results
+Biological Reference Interval
+Units
+LYMPHOCYTES
+Low
+20.0
+40.0
+MEIOD
+FOW CYTOMEIRY WITH LIGHT SCATTERING
+MONOCYTES
+2.0
+10.0
+METHOD
+FLOW CYTOMEIRY WIH LIGHT SCATTERING
+EOSINOPHILS
+1 - 6
+METHOD
+FOW CYOMETRY WITH UGHT SCATIERING
+BASOPHILS
+0 - 2
+METHOD
+FOW CYTOMETRY WITH LIGHT SCATTERING
+ABSOLUTE NEUTROPHIL COUNT
+4.71
+2.0
+7.0
+thou/pL
+MEIHOD
+CALCULATED PARAMEIER
+ABSOLUTE LYMPHOCYTE COUNT
+0.66
+Low
+1.0
+3.0
+thou/puL
+MEIOD
+CALCULATEO PARAMETER
+ABSOLUTE MONOCYTE COUNT
+0.60
+0.2
+1.0
+thou/pL
+METHOD
+CALCULATED PARAMETER
+ABSOLUTE EOSINOPHIL COUNT
+0.06
+0.02
+0.50
+thou/L
+METHOD
+CALCULATED PARAMETER
+ABSOLUTE BASOPHIL COUNT
+0.0
+0.1
+thou/pL
+MeThOD
+CALCULATED PARAMEIER
+MORPHOLOGY MICROSCOPY
+RBC
+MILD HYPOCHROMASIA. NORMOCYTIC
+MEIXOD
+MICROSCOPIC EXAMINATON
+WBC
+NORMAL MORPKOLOGY
+METHOD
+MICROSCOPIC EXAMINATION
+PLATELETS
+ADEQUATE
+MEIXOD
+MICROSCOPIC EXAMINATION
+Interpretatlon s
+RBC AND PLATELET INDICES-Mentzer Index MCVIRBC Is an automated cell-caunter based calculated screen tool to dlfferentiate cases of Iron defictency anaemlal 13
+from Beta thalassaemia tralt 13 In patlents with mlcrocytic anaemla. Thls needs to be Interpreted In Ilne with cllnlcal correlation and susplclon. Estlmation of HbAZ
+remains the gold standard for diagnosing a case of beta thalassaemla tralt:
+Dr Snehalkumar Prahladrao
+Padghane Req No. MMC
+Consultant Pathologist
+Vew Details
+Repott
+PERFORMED AT
+Agilus Diagnostics Ltd
+Eal133
+Hiranandani Hospltal A Fortis Network Hospital . Minl Seashore Road. Sector 1OA.Vashl
+Navi Mumbai. 400703
+Maharshtr Inda
+Tel
+IFax
+CIN
+U074899P61995PLC045956
+Vew

@@ -1,0 +1,59 @@
+UHID: AHJN.0000311592
+24-Apr-2025 01.28 PM
+Hemoglobin
+11.3 gdL
+11.5 - 14.5
+Photometry
+Basophits
+00
+0-1
+Platelet Count
+266 103/mm
+150-450
+IMPEDENCE
+RBC COUNT
+4.2 Millionul
+3.8-4.8
+METHOD: AUTOMATED
+:IMPEDANCE
+Packed cell volume
+34.5
+30 - 46
+METHOD CALCULATED
+WBC count
+14.2 103/mm3
+4-11
+METHOD AUTOMATED
+IMPEDANCE
+Neutrophils
+93
+40 - 75
+Lymphocytes
+05
+20-40
+Monocytes
+01
+0 - 10
+Eosinophils
+01
+1 - 6
+HEMOGLOBIN AUTOMATION
+25-Apr-2025 0343AM
+Hemoglobin
+9.7 g/dL
+11.5
+14.5
+Photometry
+PCV- PACKED CELL VOLUME
+25-Apr-2025 03 .43AM
+Packed cell volume
+28.6
+METHOD CALCULATED
+Microbiology
+HBS ANTIGEN
+23-Apr-202510.50 AM
+HCV
+HEPATITIS C VIRUS
+23-Apr-2025 10-50AM
+HIV AND II RAPID
+23-Apr-202510.49AM

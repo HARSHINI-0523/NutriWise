@@ -1,0 +1,103 @@
+DLPARTIE:
+T F PATIIOLOGY
+D Y PATIL
+Plot No 2. Sector
+Nerul.
+91 22 2773 5957
+HOSPITAL
+Navi Mumbai
+400 706
+74200 14168
+Maharashtra. India
+NAVI
+Aiumiba /
+WWW
+dypatlhospital com
+UHID NO
+IP No
+4064030 / IP250426307
+Bill Date
+27-Apr-2025 01:00 AM
+Name
+OMPRAKASH HAWALE
+Sample Date
+27-Apr-2025 01.27 AM
+Age
+Gender
+51Y s
+Male
+Reporting Date
+27-Apr-2025 10.43 AM
+Type
+Bed No
+CASH
+DICU 2
+PVT
+Sample No
+Doctor Name
+PATEL
+REPORT
+LAB NO
+Parameter
+Results
+Units
+Biological Ref Range
+Basophils
+Flowcy-
+me
+and peripheral
+smear
+Absolute Neulrophils
+xl0
+3 /pL
+2 . 0-7. 0
+Ca-cula-ed
+Absolute Lymphocytes
+0 . 8
+x10 3/pL
+2 . 0-8 . 0
+Caicula-ed
+Absolute Eosinophils
+x10 3/pL
+0 . 02-0.50
+414 0d
+Absolute Monocytes
+x10 3/uL
+0.2-1 . 0
+Caicld
+Absolute Basophils
+0 . 1
+xl0 3/uL
+0 . 01
+0 . 10
+Ca culated
+RBC MORPHOLOGY
+Normocytlc.
+Per
+1
+Snear
+Normochromic
+WBC MORPHOLOGY
+Nil
+Per
+pher 41
+smear
+PLATELET MORPHOLOGY
+Adequate
+Peripheral
+siear
+Foot Note
+Note
+End Of Report
+Dr.SHIRISH KHATU
+CONSULTANT
+PATHOLOGIST
+Verified By
+User
+10693
+Print Dt
+27-Apr-2025 10.44 AM
+Page 5 of 5
+GENERAL
+Reporting Stationery
+Fh e

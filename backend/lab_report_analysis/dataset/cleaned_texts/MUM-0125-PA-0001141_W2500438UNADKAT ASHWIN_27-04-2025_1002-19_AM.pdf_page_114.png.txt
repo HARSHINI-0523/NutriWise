@@ -1,0 +1,114 @@
+RADIOMETER ABL8OO FLEX
+1RL835
+RLBY-WANAWORIE NABL MC 5807
+08 56 4m
+F ATIENT REPORT
+Syrirge
+S 1 5ul
+Sample
+41419
+IJentificaiions
+Biff 35-/
+Pallenl IC
+Calleni
+Sample:
+Artenal
+22 0 :
+FO.l
+21 0
+Olvocl Zas Values
+ra
+7 394
+7 350
+450
+p30.
+48 0
+rirko
+35 0
+45 0
+pO.
+30 7
+mrhs
+83 0
+108
+Acid Base Status
+c-CO P stic
+27 1
+nno/
+c-CO Pic
+23
+rmo /-
+cO.l
+6 1
+Vol
+c3ase
+3 3
+rro/
+3asei Ecflc
+rarno IL
+Baro
+7015
+mrHg
+Srimeti Values
+-at
+9 2
+Sic L
+Actc
+23 7
+50 2
+c O.c
+6 4
+Vol
+FO.Hb
+43 3
+FCOKb
+lectrclye Values
+c Va
+136
+Nrjo/
+135
+146
+3 2
+I7r1o /
+3 5
+5 0
+r-az
+1 08
+rTrn0 /
+1 15
+129
+cii
+101
+rir1o /
+105
+Metabali e Values
+C-ac
+2 1
+rrto/
+0 5 . 16
+Temperature Corrected Vzlues
+P T ic
+7 13
+Tlc
+23 3
+rrts
+p .T Ic
+10 5
+rarts
+Xxyger Status
+FChunte
+52 7
+p5O -
+30 61
+rtFs
+Iles
+Valuers above reference rane
+Valuer S below refe ence range
+Valuer s above Ihe critical lirnits
+Calculated value
+Estimated valuel S
+Inif:
+3 57 43Am
+10236.0-5
+Blc
+Bic

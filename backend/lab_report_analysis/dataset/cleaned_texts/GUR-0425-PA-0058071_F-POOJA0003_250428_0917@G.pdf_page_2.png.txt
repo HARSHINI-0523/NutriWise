@@ -1,0 +1,78 @@
+code
+Ujala ygnus
+4 L
+67/068652
+R Y c
+CygnusSuperSpecialityHospital
+AABH
+47707
+Jccrzdneo
+Hill Dar
+M A.
+UHi NO4
+Name
+Sample col Date
+6.16 PM
+Mrs. POOJA
+AgelGender
+33 Years3 Months25 Days / Female
+Sample Rec Date
+Doctor
+OCHEMST
+NNVESTTGATION
+LFT LIVER FUNCTION TEST
+LET
+BILLIRUBIN TOTAL
+0.44
+BILLIRUBIN DIRECT
+0.18
+mgdl
+0.1 - 1.0
+BILLIRUBIN TNDIRECT
+mgldl
+0.0 -0.3
+0.26
+SGOT AST
+0.1 -0.9
+SGPT ALT
+Ulml
+10 - 40
+Ulml
+ALK PHOSPHATASE ALP
+110
+10
+TOTAL PROTEIN
+IUI
+28 - 111
+6.0
+SERUM ALBUMIN
+gm/dl
+6 - 8
+3.5
+GLOBULIN
+gm/dl
+3. -5.5
+2.50
+AG RATIO
+2.5 -3.5
+1.40
+88 End Of The Report
+sal
+ab Technician
+ser: ASHWANI R
+Dr. NEELAKSH KAUL
+Pathologist
+Date
+Time
+8.53 PM
+MBBS. MD
+Vic
+fcar
+l 6
+14m
+QJic 5hj C
+1 .WW
+: 1:
+Nolbar
+mgldl
+gmldl

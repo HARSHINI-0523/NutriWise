@@ -1,0 +1,72 @@
+DEPARTMENT OF PATHOLOGY
+PPatient
+SIRFEESHA
+JAdmn
+Dr.MAHESH A
+GIRIDHAR YADHAV P
+Report Date
+21-Apr-25
+09:49 am
+IBill Date
+21-Apr-25
+07 09 am
+Service No
+S1411490
+Ward / Room/ Bed
+Parameter
+Specimen
+Results
+Biological Reference
+Method
+Platelet count
+2.78
+2.1
+5.0
+Lakhs/Cumm
+Impedance method
+Mean Cell Volume MCV
+106.7
+118
+Calculation
+Mean Cell Haemoglobin MCH
+36.1
+Calculation
+Mean Cell Haemoglobin
+33.8
+g/L
+Calculation
+Concentration MCHC
+RDW
+16 0
+11.6
+14.0
+Pulse height analysis
+DIFFERENTIAL COUNT
+Neutrophils:
+Flourescenceflowcytom
+etry/Light microscopy
+Lymphocytes
+Flourescenceflowcytom
+etry/Light microscopy
+Eosinophils
+1.4 - 4.3
+Flourescenceflowcytom
+etry/Light microscopy
+Monocytes
+4 - 7
+Flourescenceflowcytom
+etry/Light microscopy
+Basophils
+0 - 1
+Fluorescence flow
+cytometry/Light
+microscopy
+x x
+End Of Report
+kU k
+PATHOLOGIST
+Printed By
+32101845
+Printed On
+27-Apr-2025 10.46.40 AM
+System

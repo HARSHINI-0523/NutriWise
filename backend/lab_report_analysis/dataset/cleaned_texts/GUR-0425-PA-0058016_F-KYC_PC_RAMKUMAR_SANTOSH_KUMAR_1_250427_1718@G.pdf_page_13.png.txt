@@ -1,0 +1,57 @@
+DEPARTMENT OF BIOCHEMISTRY
+Patient
+KUMMAR
+Admn
+MRSE252
+Dr.ER PHYSICIAN
+Bill Date
+27-Apr-25
+12:36 pm
+Report Date
+27-Apr-25
+01.24 pm
+Parameter
+Specimen
+Results
+Biological Reference
+Method
+Creatinine
+Serum
+0.85
+0.67
+1.17
+mg/dl
+Modiried Jaffe-Kinetic
+EGFR
+90.00
+mi/min/1.73m2
+Calculation by CKD
+End Of Report
+BOLD
+Denotes Abnormal Results.
+Denotes Critical Alerts.
+Verified By
+110809
+Test results related only to the item tested:
+MC-2071
+Dr. RADHIKA CHOWDARY. D. MD
+No part of the report can be reproduced without written
+permission of the laboratory.
+SR. CONSULTANT BIOCHEMIST
+Suggested Clinical Correlation
+If neccessary . Please discuss
+Dr.D.RADHIKA CHOWDARY
+Dr.MD.MOUNUDDIN
+Dr.M.A: MUQEETH
+M.D
+MD. DNB
+SR. CONSULTANT BIOCHEMIST
+CONSULTANT BIOCHEMIST
+CONSULTANT BIOCKEMIST
+Printed By
+90115117
+Printed On
+27-Apr-2025 04:18 24 PM
+System
+RFPOK
+OVISIONAL

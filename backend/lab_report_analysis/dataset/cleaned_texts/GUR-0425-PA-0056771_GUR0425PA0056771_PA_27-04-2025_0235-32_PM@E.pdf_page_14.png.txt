@@ -1,0 +1,87 @@
+Patient
+OPIP NoIUHID
+Prvate Limiled
+OPiSLCS336616/
+Ref Doclor
+Dr Rahul Yadav
+Collecton Date/Time
+241Apri2025 01 26Pm
+Reporting DatefTime
+24Apri2025 03 33PM
+Clinical Biochemistry
+STV Aai SIIA
+Mlu
+KFT
+Function Test LKW t. Serum
+Date
+24/Apr/2025
+01:26PM
+Unit
+Bio Ref Interval
+104.0
+Blood Urea
+mgldl
+10.0
+48.5
+Nltrogen
+48.4
+Crealinine
+mgldl
+4.67-22.66
+8.51 C
+Sodium
+mgldl
+04 -1.2
+112.5 C
+mmol/L
+136
+145
+Polassium
+3 94
+mmol/L
+3.5
+5.1
+Cnloride
+86.7
+mmol/L
+107
+Uric Acid
+6.70
+mgldl
+2.4 - 5 7
+Calcium Total
+7.31
+mgldl
+8.8 - 10.2
+Kully comelale Wh cluncal
+Rcpresent Critical Valuc
+End Of Report
+shukua
+Ut fstemj Sharch Niqvl
+:4170/0osr
+Frallian
+rJul 7
+04
+LLd
+hslka4 Soss
+MAAA
+Strlu Mexlu4l enire Priville
+Lmed.
+Khuid. iunti
+ISk Km ure
+5655 - MAA- Stirlut Medical emtre Prale
+Lluled.
+Khalid. Junt
+JllletnHl 0l he Icpurt 4n bee
+eritied by ScIng Ihe Q R Cude
+UII
+top ul the
+Centre
+Kidney
+Urea
+findings
+Note
+Vual
+Nugji
+Vira
+Nagar.

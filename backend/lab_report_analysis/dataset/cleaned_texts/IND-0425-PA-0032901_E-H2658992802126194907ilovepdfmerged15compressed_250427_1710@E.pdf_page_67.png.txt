@@ -1,0 +1,59 @@
+Watk of E Coimnco
+BOMBAY HOSPITAL
+INDORE
+Qu
+Ring Road.Indore-452 010.Ph.:4771111.Extension:2156.
+Website
+wwwbombayhospitalindore.com
+N A B H
+DEPARTMENT OF PATHOLOGY
+Patient
+Dr. Ravi
+Rathi
+Gender
+Male
+Ordered Loc
+1Oth Floor
+West
+Bed No
+215
+Sample Collected On
+0:03.43
+Sample Type
+CITRATED PLASMA
+Sample Reported On
+1:01.29
+Sample No
+25050394
+TEST DESCRIPTION
+OBSERVED VALUE
+UNIT
+BIOLOGICAL RFERENCE RANGE
+PROTHROMBIN TIME PT
+Test
+12.6
+Seconds
+Normalized Mean NMPT
+11.0
+Seconds
+INR Value
+1.15
+Method
+By Fully Automated Coagulometer
+Therapeutic Range of INR for Anticoagulant Control
+2 0 - 3 0
+ACTIVATED PARTIAL THROMBOPLASTIN TIME APTT
+Test
+31.9
+Seconds
+Normalized Mean NMAPT
+23.5
+Seconds
+Method
+By Fully Automated Coagulometer
+END OF REPORT
+Dr: Neelam Bharihoke
+M.D. Pathology
+Pathologist
+AUTHORISED
+JucLL

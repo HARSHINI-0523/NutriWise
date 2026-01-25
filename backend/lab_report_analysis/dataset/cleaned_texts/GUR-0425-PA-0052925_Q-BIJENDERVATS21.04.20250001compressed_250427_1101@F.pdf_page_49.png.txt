@@ -1,0 +1,68 @@
+43
+SWASTIK
+HOSPITAL
+Jhajjar Road. Bahadurgarh
+7kc Skilt 7 ral
+7kc Sztru 7 Carc
+Palient Id
+Srl No.
+1004
+Date
+SWASTIK HOSPITAL
+Tcs
+HAEMATOLOGY
+COMPLETE BLQOD CQUNT CBC
+HAFMOGLOBIN
+Hb
+13.1
+gmIdl
+13 5 - 18 0
+VOJTAL LEUCOCYTE COUNT TLC
+16.700
+Icumm
+4000
+11000
+DIFFERENTIAL LEUCOCYTE COUNT DLC
+NCUTROPHIL
+YMPHOCYTE
+LJSINOPHIL
+MONOCYTE
+KASOPI IIL
+0 - 0
+1 VATELET COUNT
+2 69
+Lakhlcmm
+1 50
+4 50
+F 3 COUNT
+Millions/cmm
+4 5 . 5 5
+V /
+HAEMATOCRIT
+39.3
+1 C V
+86 75
+100
+0t H
+28 92
+Picogram
+27 0 - 31.0
+M c HC
+33 3
+gmIdl
+nPaneda
+G3KGo
+Govommono
+AIlLab Toat ICU 3 Ambulanco Foclllty24x7
+Ocoaumpotoind
+Govommond
+HOYAVAILABLE
+Doppled
+Ehi-JofBonr
+OCTSCaD
+NTATIn urno
+NOTEOR MEDICO LEGALPURPOSE
+O igltalxRay
+ComputorisedLob
+F
+7 .

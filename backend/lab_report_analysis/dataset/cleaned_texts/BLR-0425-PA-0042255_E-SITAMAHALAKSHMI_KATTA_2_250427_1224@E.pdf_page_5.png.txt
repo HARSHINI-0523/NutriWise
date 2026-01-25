@@ -1,0 +1,141 @@
+12.20: PM
+Patient
+COMPLETE URINE EXAMINATION
+08:51
+Parameter
+Result
+Normal Range
+COLOUR
+Pale yellow
+Pale yellow
+UROBILINOGEN
+Normal
+Negative
+BLOOD
+Negative
+Negative
+NITRITE
+Negative
+null
+LEUCOCYTE S
+Negative
+Negative
+ASCORBIC ACID
+Negative
+Negative
+EPITHELIAL CELLS
+6-8/HPF
+Negative or rare
+2HPF
+PUS CELLS
+2-3/HPF
+Negative ZIHPF
+RBC
+1-2/HPF
+Negative or rare ZIHPF
+CASTS
+Nil
+0 - 5 hyaline castsl HPF
+CRYSTALS
+Nil
+Negative
+occasional
+APPEARANCE
+Slightly Turbid
+Clear
+OTHERS
+Nil
+Nil
+NOTE
+null
+REACTION PH
+5.5
+4.5 t0 8.0
+SPECIFIC GRAVITY
+1.025
+1.005 to 1.025
+GLUCOSE
+Negative
+Negative
+PROTEIN
+Negative
+Negative
+KETONE BODIES
+Negative
+Negative
+BILE SALTS
+Negative
+Negative
+BILIRUBIN
+Negative
+Negative
+COMPLETE BLOOD PICTURE
+08.51
+Parameter
+Result
+Normal Range
+HAEMOGLOBIN
+mvOl
+12.0
+15.0 gmldL
+RDW
+Ix 6
+14.0
+BLASTS
+null
+PROMYELOCYTES
+null
+ABNORMAL
+PROMYELOCYTES /
+null
+BLASTS
+MYELOCYTES
+null
+METAMYELOCYTES
+null
+BAND FORMS
+null
+POLYMORPHS
+75
+80
+LYMPHOCYTES
+20 - 40
+EOSINOPHILS
+01
+1 . 6
+HAEMATOCRIT PCV
+24 5 Voil
+40.0
+50.0 Vol
+MONOCYTES
+06
+2 . 10
+BASOPHILS
+00
+0 - 2
+ABNORMAL CELLS
+null
+PROLYMPHOCYTES
+null
+ATYPICAL CELLS
+null
+REACTIVE
+null
+LYMPHOCYTES
+PROLYMPHOCYTE
+null
+RBC
+Microcytic hypochromic
+null
+WBC
+Within normal limits
+null
+PLATELETS
+Adequate
+null
+RBC COUNT
+4.4 Millionslcumm
+3.8
+4.8 Millionslcumm
+4 2
+11.

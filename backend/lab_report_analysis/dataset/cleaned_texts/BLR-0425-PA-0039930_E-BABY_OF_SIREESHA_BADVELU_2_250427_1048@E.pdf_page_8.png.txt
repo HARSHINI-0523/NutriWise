@@ -1,0 +1,38 @@
+DEPARTMENT OF BLOOD BANK
+PPatient
+SIRRFEESHIA
+JAdmn
+Dr.MAHESH A
+GIRIDHAR YADHAV P
+Report Date
+18-Apr-25
+09:22 am
+IBill Date
+8-Apr-25
+05 02 am
+Service No
+S1407900
+Ward / Room/ Bed
+Parameter
+Specimen
+Results
+Method
+BLOOD GROUPING AND RH
+BLOOD GROUP.
+Blood
+Slide Agglutination
+Method
+Rh D Typing
+Positive
+Ve
+Method.
+Slide Agglutination Method
+x x
+End Of Report x
+kU k
+PATHOLOGIST
+Printed By
+32101845
+Printed On
+27-Apr-2025 10.46.40 AM
+System

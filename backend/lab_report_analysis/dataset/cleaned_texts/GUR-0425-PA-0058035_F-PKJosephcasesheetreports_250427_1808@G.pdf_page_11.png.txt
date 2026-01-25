@@ -1,0 +1,121 @@
+PRASHANTH
+SUPERSPECIALITY
+Q4uan
+HOSPITALS
+Dr. PARIMUTHUKUMAR
+Encounter No
+600053908
+Requested At
+17.54.35
+Ward
+7th FLOOR WARD/716
+Sample Collected At
+26/0472025 18.55.43
+Sample Received At
+119.04:19
+Reported At
+19.46.23
+Authorized At
+119.47.54
+NAGAR
+Madhavaram Milk
+HEMATOLOGY
+Colony
+Parameter
+Result
+Units
+Blological Reference
+Methodology
+Range
+Blood Group Rh
+Positive
+Sample
+EDTA WHOLE BLOOD
+Complete Blood Count CBC
+Sample
+EDTA WHOLE BLOOD
+Haemoglobin Hb
+12.4
+13-17
+COLORIMETRY
+Haematocrit PCV
+37.0
+40 - 50
+COLORIMETRY
+Total WBC Count WBC
+8900
+cellslcumm
+4000
+10oo0
+FLOWCYTOMETRY
+Platelet Count
+198
+thousicumm
+150
+410
+IMPEDANCE METHOR
+ESR
+mmlhr
+0 -15
+Photometrical
+caplllary
+Total RBC Count
+4.18
+mlllicumm
+4.5 -5.5
+IMPEDANCE METHDD
+MCV
+88.6
+83 -101
+Calculated Parameer
+MCH
+29.6
+27 - 32
+Calculated Parame r
+MCHC
+33.5
+31.5 .34.5
+Calculated Parameter
+Differential Count DC
+Polymorphs
+FLOWCYTOMETRY
+Lymphocytes
+20 - 40
+FLOWCYTOMETRY
+Eosinophils
+1-6
+Monocytes
+FLOWCYTOMETRY
+02-10
+FLOWCYTOMETRY
+Basophllis
+0 - 2
+Partial Thromboplastin Time
+FLOWCYTOMETRY
+APTT
+aPTT Test
+31.8
+sec
+26.8
+30.7
+aPTT Control
+28.0
+sec
+Prothrombln Time PT
+Sample
+Plasma
+Test
+14.4
+Seconds
+Control
+14.0
+Seconds
+Date
+RiSA Unil of PRASHANTI FERTILITY
+Old Survey No. 1354.
+RESEARCH CENTRE PVT: LTD.
+Block No.45. Jawaharlal Nehrui Road
+2nn
+Nos:7354/18.
+TS. Nos a/4 1/5
+Re-Survey

@@ -1,0 +1,81 @@
+care You can trust
+SITARAM BHARTIA
+Instilute 0l S-icnce Reccarch
+LABORATORY INVESTIGATION REPORT
+Patient
+UHId
+SBID.325941
+3 S
+Episode
+1515162
+Ref. Doctor
+Dr . Medicine Unit /Pradeep Narayan Chauhan
+Biochemistry
+TEST NAME
+RESULT
+UNIT
+BIOLOGICAL REF . INTERVA
+Sample No
+Collection Date
+09.51
+Ack Date
+10.02
+Report Date
+12.37
+HbAlc
+Sample Type-
+Whole blood EDTA
+HbAIc
+6.1
+H
+5.7
+Method - HPLC
+Result
+A1c
+Normal
+less than 5.7
+Prediabetes
+5.7 to 6.4
+Diabetes
+6.5 or higher
+Interpretations:
+HbAIC has been endorsed by clinical groups and American Diabetes Association guidelines 2017 for
+diagnosing diabetes
+a cut off point of 6.59
+Low glycated haemoglobin in a non diabetic individual is often associated with systemic inflammatory
+diseases. chronic anaemia especially severe iron deficiency and haemolytic . chronic renal failure and liver
+diseases.
+Clinical correlation suggested
+In known diabetic patients. following values can be considered as a tool for monitoring the glycemic control.
+Excellent control-6-7
+Fair to Good control
+7-8
+Unsatisfactory control
+8 to 10
+Poor Control
+More than 10
+Clinical Pathology
+TEST NAME
+RESULT
+UNIT
+BIOLOGICAL REF. INTERVA
+Sample No
+07E0095085
+Collection Date
+14.57
+Ack Date
+15.03
+Report Date
+15.37
+Urine RE and ME Routine and Microscopic
+Sample Type-
+Urine
+Gross Examination
+Colour
+Pale Yellow
+Pale Yellow
+Method
+Visual/Gross examination
+Print DateTime:
+MC.2758
+using

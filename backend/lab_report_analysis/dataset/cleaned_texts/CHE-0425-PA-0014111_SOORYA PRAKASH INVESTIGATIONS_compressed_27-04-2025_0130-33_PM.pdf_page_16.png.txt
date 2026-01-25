@@ -1,0 +1,88 @@
+Neuberg
+DIAGNO Tic
+Indo
+UAE
+Soutl. Alaico
+USA
+TEST
+REPORT
+Final Laboratory Report
+PID
+Dr. Dhenesh .R. MBB.S
+DNB .
+Ref: ID
+Corporate
+Delta Hospitals
+UHID
+Col Dt. Time
+23-Apr-2025 23.48
+Recv Dt: Time
+23-Apr-2025 23.48
+Sample Type
+Serum
+Reg Dt: Time
+23-Apr-2025 23.48
+Report Released
+24-Apr-2025 16.25
+Report Printed
+24-Apr-2025 16.27
+TEST
+RESULTS
+UNIT
+BIOLOGICAL REF RANGE
+TEST REMARK
+Anti HAV IgM
+Anti HAV IgM.Serum
+Reactive
+SICO
+Nonreactive
+CMIA
+Anti HAV IgM OD Value
+11.83
+SICO
+0.8
+Non Reactive
+CMIA
+0.8
+1.2
+Grayzone
+1.2
+Reactive
+Note
+Patients exhibiting Grayzone Reactivity should be monitored at weekly intervals
+This will distinguish rising Anti HAVlgM levels associated with Acute Hepatitis A infection
+from decreasing or unchanging levels often associated with recovery:
+Reactive results suggest recent HAV infection.
+Rheumatoid factor can give rise to false positive results.
+False negative
+positive results are observed in patients receiving mouse
+monoclonal antibodies for diagnosis or therapy:
+For heparinized patients. draw specimen prior to heparin therapy as presence of
+fibrin leads to erroneous results
+Comments
+Hepatitis A Virus
+HAV is a RNA virus of Picornavirus family transmitted by fecal- oral
+route: Infection with HAV is self limiting though 5-10 cases may show
+secondary rise
+in enzymes. Since symptomatic Hepatitis A virus infections are clinically indistinguishable
+from Hepatitis B or C virus. serological testing is an extremely important tool to achieve
+proper diagnosis. During the acute phase f HAV infection. IgM appears in patients
+serum in nearly all cases at the onset of symptoms. peaks within the first month of
+illness and persists for 3-6 months. It declines to undetectable levels within 12 months
+The most effective diagnostic determination of HAV acute infection is the detection of
+Anti HAV- IgM:
+Note: LL-VeryLow.L-Low.H-High.HH-VeryHigh.A-Abnormal
+Mu d
+AUTO
+Dr.M.Sowmiya
+Consultant Microbiologist
+Verified by
+godas
+FMJlun sCesngiuua
+044-4141 2222
+Neuberg Ehrllch Laboratory Prlvate Llmlted
+Infoanouboradlagnostic com
+No7 RalvGandhisaiallndustrial Estate Perungudl Chennal
+600096
+Wwwrauboradlaonostk:com
+LA.

@@ -1,0 +1,123 @@
+DEPARTMENT OF CLINICAL BIOCHEMISTRY
+Patient
+Admn
+UMR9996
+Dr.CHENNA VIJAY MD. DM NEUROLOG
+Bill Date
+22-Apr-25
+08.40 am
+Report Date
+22-Apr-25
+09:47 am
+Parameter
+Specimen
+Results
+Biglogical Reference
+Method
+SGPT/ALT
+U/L
+UV WITHOUT PSP
+SGOTIAST
+U/L
+UV WITHOUT PSP
+Alkaline Phosphatase
+169
+120
+U/L
+PNPP AMP BUFFER
+TOTAL PROTEIN
+5.8
+6.3
+8.2 gm/dl
+BIURET
+ALBUMIN
+3.5
+3.5
+5.2
+g/dl
+BROMOCRESOL GREEN
+Globulin
+2.3
+2.0
+3.5 gm/dl
+Calculation
+AG Ratio
+1.52
+CRP
+2.6
+6.0
+mg/L
+LATEX PARTICLE
+IMMUNOTURBIDIMETRI
+Calcium
+7.5
+8.8
+10.6
+mg/dl
+ARSENAZO
+Phosphorous
+2.9
+2.5
+4.5
+mg/dl
+PHOSPOMOLYBDATE
+COMPLEX
+Magnesium
+2.06
+1.8
+2.6
+mg/dl
+XYLIDYL BLUE
+PRO CALCITONIN
+Procalcitonin
+0.861
+Low Risk for Sepsis: 0.5
+Enhanced
+High risk for sepsis: 2.0
+Chemiluminescence
+ng/mL
+Interpretation
+PCT is the prohormone of calcitonin secreted
+by different types of cells from numerous
+organs in response to proinflammatory
+stimulation. particularly bacterial stimulation
+Depending upon clinical background. PCT
+0.1 can indicate clinically relevant bacterial
+infection. requiring antibiotic treatment:
+PCT is an important marker
+enabling specific
+differentiation between bacterial infection and
+other causes of inflammatory
+reactions
+Resorption of septic infection is accompanied
+by decreases in PCT concentration which
+returns to normal with half life of 24 hours
+In certain situations newborns. polytrauma.
+burns.major surgery. prolonged or severe
+cardiogenic shock etc PCT elevation may
+be independent of any infectious aggression:
+The return to normal values is usually rapid
+6. Viral infections. allergies. autoimmune
+diseases and graft rejection do not lead to
+significant increase in PCT . Localized bacterial
+infections can lead to moderate increase in PCT
+levels:
+NOTE.
+Patients on Biotin
+supplement
+have
+interference in some immunoassays. With
+individuals taking high dose Biotin more than
+mg per day supplements. at least -hour wait
+time before blood draw is recommended
+Low Risk for Sepsis
+0.5 ng/ml.
+High Risk for Sepsis
+2.0
+ng/ml:
+Printed By
+41011329
+Printed On
+22-Apr-2025 07:17:55 PM
+System
+may

@@ -1,0 +1,134 @@
+HOSPITAL
+City.
+Amalapuram
+533201
+wwwkims.in
+NA BH
+HS
+DciL
+791
+H-2022-1059
+Mrs.
+ANIVALLI LAKSHMI
+2 2
+KOUNDINYA
+Iat
+S6Y/F
+GYNAECOLOGY
+KIMS-1667722
+Visit No
+OP-25039472
+Time
+10.00
+Specimen
+BLOOD EDTA
+and Time
+11.15
+Sample No
+BLE133311
+Approved
+Department Of Hematology
+Description
+Result
+Unitc
+Reference Range
+Methodology
+Complete Blood Picture
+CBP . EDTA Whole Blood
+Haemoglobin
+13.1
+g/dL
+Spectrophotmetry
+Packed Cell Volume PCV
+37.2
+Derived from Impedance
+Total RBC Count
+4.20
+million/cumm 3.8
+4.8
+Electrical Impedance
+MCV
+88.5
+101
+Calculated
+MCH
+31.2
+Calculated
+MCHC
+35.2
+g/dL
+31.5
+34.5
+Calculated
+RDW-CV
+12.6
+11.6
+14.0
+Derived from Impedance
+Platelet Count
+1.72
+Lakhs/Cumm 1.5
+4.1
+Electrical Impedance
+MPV
+8.9
+7.0
+10.0
+Derived fram Impedance
+Total WBC Count
+6.980
+cellslcumm
+4000
+10000
+ElectIcal Impedance
+Neutrophils
+65.7
+Impedance and
+Absorbance
+Lymphocytes
+27.6
+Impedance and
+Absorbance
+Eosinophils
+2.4
+Irpedance and
+Absorbance
+Monocytes
+3.3
+Impedance and
+Absorbance
+Basophils
+1.0
+0.0
+2.0
+Impedance and
+Absorbance
+Note: Please Correlate with Clinical Findings
+End of Report
+Techniclan
+2035
+Dr. Divya Duvvada
+Pathology
+SPECIALTY
+QOAl
+GPER
+Heallh
+cnailanya
+EII
+District
+Axlvani
+239999
+8856 -
+Name
+Sex
+pjrtment
+and
+Date
+Smple
+Date
+Report
+Status
+Test
+Ii
+Ked
+Aeel/ /1ANeD

@@ -1,0 +1,71 @@
+PARTH
+PATHOLOGY LABORATORY
+Patient ID
+202504227
+Collccllon Date
+Patient s
+Ref
+Dr. Shrec Patlh Hospllal
+Reporling Dale
+Tcst
+MEMATOLOGY RELOKL
+KEMOGLOBIN
+12.2
+mgldl
+13.517.5
+Total R B C
+3.75
+milllcumm
+56 2
+Icumm
+4C0-11C00
+Total W. B C
+18700
+DIFFERENTIAL CQUNT
+40-75
+olymorphs
+20 45
+Lymphocytes
+Eosinophils
+2-8
+Monocytes
+Basophils
+1.28
+Lakhs Icmm
+1.54.5
+PLATELET COUNT
+BLQQDINDICES
+37.8
+45-52
+HC.T.
+8 -96
+MCV
+100.8
+32.53
+27-32
+MCH
+32.28
+gldl
+30-36
+MCHC
+16.9
+10 015.0
+RD.W.
+7.8
+65-11.0
+M.P.V.
+0 110
+0.100-0.500
+ateletcrit PCT
+Normocytic
+RBC Morphology
+Normochromic
+Plateles reduced on
+Platelets on Smear
+Smear
+Dr.D.P Ralput
+MBBS
+Lab Tcchniclan
+Corelbie repo G4Chrcg QanhsHospital. Banarsi Nogar. Hirawadi Panchavati Nashik
+Please
+82.FA

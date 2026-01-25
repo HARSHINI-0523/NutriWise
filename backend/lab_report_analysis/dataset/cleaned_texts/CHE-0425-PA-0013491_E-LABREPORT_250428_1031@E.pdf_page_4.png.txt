@@ -1,0 +1,67 @@
+Patent ID
+Sample No
+25042348
+EF
+Dr.S.Rajasekaran. M.S. DNB. F.R.CS ED M.CH LIV FAC.S.
+Reviewed On
+01.03PM
+FRCS ENG PH.D
+Locaton
+2034-D
+Speciality
+Diabetc/Ortho
+DoctorUnit
+Testi
+Obtiained Value
+Bio Ref Intierval
+Uniti
+DoneBy
+HAEMATOCRIT PCV
+40.0
+36 to 46
+KOKILA G
+MCV
+83 to 101
+KOKILA G
+MCH
+26.2
+27 to 32
+KOKILA G
+MCHC
+32.0
+31 5 to 34 5
+KOKILA G
+PLATELET COUNT
+259000
+150000 to 410000
+cells/cu.mm
+KOKILA G
+TOTAL WBC COUNT
+9200
+4000 to 10.000
+cells/cu.mm
+KOKILA G
+NEUTROPHILS
+63.0
+40 to 80
+KOKILA G
+LYMPHOCYTES
+26.1
+20 to 40
+KOKILA G
+Aie
+MONOCYTES
+5.7
+2 to 10
+KOKILA G
+Aie
+EOSINOPHILS
+4.7
+1to 6
+KOKILA G
+5z
+Dr . N. Bharatihi Santihose MD
+Dr
+M: Shyam Kumar M.B.B.S . D.CP..
+Clinical Microbiologist
+Head Of the Department

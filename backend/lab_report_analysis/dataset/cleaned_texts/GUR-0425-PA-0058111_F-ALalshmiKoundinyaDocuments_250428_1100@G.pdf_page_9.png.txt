@@ -1,0 +1,76 @@
+HOSPITAL
+City. Amalapuram
+533201
+NABM
+wwwkims.in
+91
+H-2022-1059
+Mrs.
+ANIVALLI LAKSHMI KOUNDINYA
+Time
+10 00
+Sample No
+Time
+11:03
+Approved
+Status
+Department Of Microbiology
+Methodology
+Result
+Units
+Reference Range
+Test Description
+C Virus Tri Dot Test. Serum
+HCV
+Hepatitis
+HCV Tri Dot Test. NEGATIVE
+Hepatitis Virus
+Serum
+Of Serology
+Department
+Methodology
+Reference Range
+Result
+Units
+Jest Description
+Rapid
+HIV Tri Dot Test. Serum
+Virus
+Non
+Human Immunodeficiency
+Reactive
+KIV Tri Dot
+Test. Serum
+Rapld
+HBsAg
+Hepatitis B Surface Antigeh
+NEGATIVE
+B Surface Antigen HBsAg
+Hepatitis
+Test. Serum
+Clinical Findings
+Note: Please Correlate
+of Report
+Purushottam Medidi
+Dr.
+Microbiologist
+Technician
+1049
+SPECIALTY
+YER
+Health
+Chaitanya
+District.
+bdavari
+239999
+8856
+Name
+and
+and
+Rapid
+Rapid
+Rapid
+with
+End
+Deborak -
+Deborah

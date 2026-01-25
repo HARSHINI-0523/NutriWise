@@ -1,0 +1,75 @@
+4 TR
+U1.A
+CE v ER
+Opp. Civil Hospital. Jhajjar
+NA6A
+Tansaclion No
+583734 -
+Date
+Patiem
+.SZ3
+SaumpleE
+Time
+Date Time
+01 47 47 pm
+HAEMATOLOGYREPORT
+RESULTS
+UNITS
+REFF RANGE
+HB HAEMOGLOBIN
+Jm / 11
+1 3 . 5-- 7 . 5
+TLC
+Mun
+40uu-- 11000
+LC
+40-- /0
+2 0--40
+2--8
+UMII:
+RBC
+m: :on/cuM
+5--6 . 5
+PCV
+42--54
+MCV
+f1
+76--96
+MCH
+pa
+27--37
+MCHC
+gm /4:
+30--35
+PLATELATE
+COUNT
+ac/cumm
+1.5--4 . 5
+RDW
+11--16
+PV
+6--10
+No-Dil.l
+END OF REPORT
+0800
+utlahai
+User Nm
+LAB
+Print Date Time
+Syskem
+38n 856a 7
+2b-PC
+CBC
+Throld. Kldeny Function Test
+Liver Function Test
+Lipid Profile
+Blood Sugar
+FSH Prolactin. Il-HCG TORCH
+CA.125. CEA
+PSA
+3DIAD Ultrsound coloz Doppler CT Scan DigitalXRaye Computerised Lab
+Not For MEDiCO LEGAL PURPOSE
+rn7faai24 .3uaaa
+xalil .
+vaurr
+tholkg

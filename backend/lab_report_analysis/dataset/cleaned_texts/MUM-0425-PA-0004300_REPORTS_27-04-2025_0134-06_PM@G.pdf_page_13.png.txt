@@ -1,0 +1,76 @@
+M LR A
+1 1
+0 P T A
+TEST REPORT
+Patient
+Dr. GAURISH SHETTY M.D PHYSICIAN
+Reported Dt
+Referred Dr.
+Dr. JAYANTI LUNIA
+Collectlon Dt
+RENAL FUNCTIQN TESIT
+Test
+Result Value
+Range Value
+Unit
+BLOOD UREA
+24.6
+14-50
+mgldl
+BLOOD UREA NITROGEN
+11.50
+5-20
+mgldl
+CREATININE
+1.18
+0.5 - 1.5
+mgldl
+URIC ACid
+6.6
+3.5- 7.22
+mgldl
+TOTAL PROTEIN
+6.99
+6 to 8
+gldl
+ALBUMIN
+3.82
+3.5 t0 5.0
+gldl
+GLOBULIN
+3.17
+2.5 t 4.0
+AG RATIO
+1.21
+CALCIUM
+9.5
+8.4-10.5
+mgldl
+INORGANIC PHOSPHORUS
+4.12
+2.5-5.0
+mgldl
+SERUM SODIUM
+140.1
+135 t0 150
+MEq/l
+SERUM POTASSIUM
+3.90
+3.5 ta 5.5
+MEq/l
+SERUM CHLORIDE
+101.8
+96 to 108
+MEqul
+End Of Report
+CHECKED BY
+Dr. AGARWAL AKHIL
+MD PATH
+MIRA HOSPITAL
+Alired BidMifa elpsrmaMart Near Salasar Business Park 150 Feet Cross Road. Bhayandar West Thane
+Aade tgf 1
+Landline: 91-8591110773
+TOLL FREE
+WWW
+mirahospitalscom
+gdl
