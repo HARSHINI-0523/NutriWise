@@ -23,6 +23,16 @@ const UserSchema = new mongoose.Schema({
   emailOTP: String,
   emailOTPExpires: Date,
 
+  completedChallenges: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Challenge'
+  }],
+
+  joinedChallenges: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Challenge'
+  }],
+
   createdAt: {
     type: Date,
     default: Date.now,

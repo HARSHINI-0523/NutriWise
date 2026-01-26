@@ -6,15 +6,23 @@
     padding: 2rem;
     position: relative;
     overflow: hidden;
-    background-color: #f8fcfb; /* Very light, clean background */
+    background-color: #f8fcfb;
+    /* Very light, clean background */
 
     /* --- Page Fade In Animation --- */
     animation: fadeIn 0.8s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .form-content {
@@ -31,8 +39,15 @@
 }
 
 @keyframes scaleUp {
-    from { transform: scale(0.95); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* --- General Typography --- */
@@ -42,7 +57,9 @@
 }
 
 .form-header h2 {
-    color: #61bead; /* Teal heading color */
+    font-size: 1.8rem;
+    color: #25725c;
+    /* Teal heading color */
     font-weight: 700;
     margin-bottom: 5px;
 }
@@ -71,7 +88,7 @@
 legend {
     font-size: 1.2em;
     font-weight: 600;
-    color: #62bfae; 
+    color: #62bfae;
     padding: 0 10px;
 }
 
@@ -129,7 +146,8 @@ legend {
     margin-bottom: 15px;
 }
 
-.checkbox-label, .radio-label {
+.checkbox-label,
+.radio-label {
     display: flex;
     align-items: center;
     font-weight: normal;
@@ -141,7 +159,7 @@ legend {
     margin-top: 3px;
 }
 
-.check-radio-group input[type="checkbox"], 
+.check-radio-group input[type="checkbox"],
 .check-radio-group input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
@@ -155,12 +173,12 @@ legend {
 }
 
 .check-radio-group input[type="radio"] {
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 /* Checked state */
 .check-radio-group input:checked {
-    border-color: #8df3a5; 
+    border-color: #8df3a5;
     background-color: #28a745;
 }
 
@@ -193,10 +211,11 @@ input[name="foodAllergies"]:focus {
 .nutriwise-button {
     width: 100%;
     padding: 14px;
-    background-color: #28a745; /* NutriWise Green */
+    background-color: #28a745;
+    /* NutriWise Green */
     color: white;
     border: none;
-    border-radius: 50px; 
+    border-radius: 50px;
     font-size: 1.1em;
     font-weight: 600;
     cursor: pointer;

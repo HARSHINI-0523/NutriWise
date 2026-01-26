@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
 
 const userDetailsSchema = new mongoose.Schema({
+  // _id will be manually set to match User._id, so no explicit field definition needed here unless we want to validate it
   name: { type: String, required: true },
   age: { type: Number, required: true },
-  gender: { type: String, required: true },
-  height: { type: Number, required: true },
   weight: { type: Number, required: true },
+  height: { type: Number, required: true },
+  gender: { type: String, required: true },
   isDiabetic: Boolean,
   hasHypertension: Boolean,
   hasThyroid: Boolean,
@@ -28,6 +29,4 @@ const userDetailsSchema = new mongoose.Schema({
   }
 }, { timestamps: true });
 
-module.exports =
-  mongoose.models.UserDetails ||
-  mongoose.model("UserDetails", userDetailsSchema);
+module.exports = mongoose.models.UserDetails || mongoose.model("UserDetails", userDetailsSchema);

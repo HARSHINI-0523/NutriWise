@@ -7,6 +7,10 @@ const cookieParser = require("cookie-parser");
 
 
 dotenv.config();
+
+// Workaround for local DNS issues with MongoDB Atlas
+const dns = require('dns');
+dns.setServers(['8.8.8.8', '8.8.4.4']);
 const app = express();
 const PORT = process.env.PORT || 5000;
 const passport = require("passport");
@@ -21,6 +25,7 @@ const userRoutes = require("./routes/userRoutes");
 const appointmentRoutes = require("./routes/appointmentRoutes");
 const dietRoutes = require("./routes/dietRoutes");
 const labAnalysisRoutes = require("./routes/labAnalysisRoutes");
+const challengeRoutes = require("./routes/challengeRoutes");
 
 
 // Middleware
@@ -45,14 +50,15 @@ app.use("/api/users", userRoutes);
 app.use("/api/appointments", appointmentRoutes);
 app.use("/api/diet", dietRoutes);
 app.use("/api/lab-analysis", labAnalysisRoutes);
+app.use("/api/challenges", challengeRoutes);
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-.then(() => console.log("MongoDB connected"))
-.catch((err) => console.error("MongoDB connection error:", err));
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 // Start server
 app.listen(PORT, () => {

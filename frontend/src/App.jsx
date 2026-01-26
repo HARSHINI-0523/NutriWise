@@ -16,8 +16,7 @@ import CheckupCalendar from "./components/checkupCalendar/CheckupCalendar.jsx";
 import VerifyEmail from "./components/verifyEmail/VerifyEmail.jsx";
 import GenerateDietPlan from "./components/generateDietPlan/GenerateDietPlan.jsx";
 import ReportViewer from "./components/reportViewer/ReportViewer.jsx";
-//import DietPlanWeeklyPage from "./components/dietPlanView/dietPlanWeeklyPage.jsx";
-import  DietPlanWeeklyPage from "./components/weeklyPlan/weeklyDietPlan.jsx";
+import Challenges from "./components/challenges/Challenges.jsx";
 //Contexts
 import { UserLoginProvider } from "./contexts/UserLoginContext";
 import { ToastProvider } from "./contexts/ToastContext.jsx";
@@ -47,7 +46,7 @@ function App() {
           path: "/user-details-form",
           element: <UserDetailsForm />,
         },
-        
+
 
         { path: "/reports/my", element: <MyReports /> },
         { path: "/reports/upload", element: <UploadReport /> },
@@ -55,9 +54,10 @@ function App() {
         { path: "/myreports/view/:id", element: <ReportViewer /> },
 
         { path: "/diet-plans/generate", element: <GenerateDietPlan /> },
-        { path: "/diet-plans/weekly", element: <DietPlanWeeklyPage /> },
-        {path:"/friends",element:<FriendsPage/>},
-        {path:"/checkup-calendar",element:<CheckupCalendar/>}
+        { path: "/diet-plans/weekly", element: <DietPlansPage /> },
+        { path: "/friends", element: <FriendsPage /> },
+        { path: "/checkup-calendar", element: <CheckupCalendar /> },
+        { path: "/challenges", element: <Challenges /> }
       ],
     },
   ]);
