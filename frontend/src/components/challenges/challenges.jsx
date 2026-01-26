@@ -126,7 +126,7 @@ const Challenges = () => {
                                         <div className="friend-completions">
                                             <span className="friend-icon">👥</span>
                                             <span className="friend-text">
-                                                Completed by <strong>{leaderboard[challenge._id].join(", ")}</strong>
+                                                Completed today by <strong>{leaderboard[challenge._id].join(", ")}</strong>
                                             </span>
                                         </div>
                                     )}
@@ -141,7 +141,7 @@ const Challenges = () => {
                                                 className="join-btn"
                                                 onClick={() => handleJoin(challenge._id)}
                                             >
-                                                Accepted Challenge ⚔️
+                                                Accept Challenge ⚔️
                                             </button>
                                         )}
 

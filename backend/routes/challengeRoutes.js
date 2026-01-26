@@ -60,15 +60,47 @@ router.get("/", protect, async (req, res) => {
 
         const dailyChallenges = shuffledChallenges.slice(0, 5);
 
+        // Helper to check status (handles both legacy Strings and new Objects)
+        const checkStatus = (list, challengeId) => {
+            return list.some(item => {
+                if (item.challenge) {
+                    return item.challenge.toString() === challengeId.toString() && item.date === today;
+                } else {
+                    // Legacy item (ObjectId string). Treat as "completed in the past".
+                    // So it is NOT completed today.
+                    return false;
+                }
+            });
+        };
+
         const challengesWithStatus = dailyChallenges.map((challenge) => {
-            const isCompleted = user.completedChallenges.includes(challenge._id);
-            const isJoined = user.joinedChallenges?.includes(challenge._id);
+            const isCompleted = checkStatus(user.completedChallenges, challenge._id);
+            const isJoined = checkStatus(user.joinedChallenges, challenge._id);
             return {
                 ...challenge.toObject(),
                 completed: isCompleted,
-                joined: isJoined || isCompleted // If completed, it's implied joined
+                joined: isJoined || isCompleted
             };
         });
+
+        // Lazy Migration: Convert legacy Strings to Objects with old date
+        let userDirty = false;
+        const migrateLegacy = (list) => {
+            return list.map(item => {
+                if (!item.challenge && !item.date) { // It's likely an ID
+                    userDirty = true;
+                    return { challenge: item, date: '1970-01-01' };
+                }
+                return item;
+            });
+        };
+
+        user.completedChallenges = migrateLegacy(user.completedChallenges);
+        user.joinedChallenges = migrateLegacy(user.joinedChallenges);
+
+        if (userDirty) {
+            await user.save();
+        }
 
         res.json(challengesWithStatus);
 
@@ -84,11 +116,20 @@ router.patch("/:id/complete", protect, async (req, res) => {
         const challengeId = req.params.id;
         const user = await User.findById(req.user._id);
 
-        if (user.completedChallenges.includes(challengeId)) {
+        const today = new Date().toISOString().split('T')[0];
+
+        // Check if already completed TODAY
+        const alreadyCompleted = user.completedChallenges.some(c => {
+            // Handle legacy string (if not migrated yet)
+            if (!c.challenge) return false;
+            return c.challenge.toString() === challengeId && c.date === today;
+        });
+
+        if (alreadyCompleted) {
             return res.status(400).json({ message: "Challenge already completed" });
         }
 
-        user.completedChallenges.push(challengeId);
+        user.completedChallenges.push({ challenge: challengeId, date: today });
         await user.save();
 
         res.json({ message: "Challenge completed! 🎉" });
@@ -105,11 +146,20 @@ router.post("/:id/join", protect, async (req, res) => {
         const challengeId = req.params.id;
         const user = await User.findById(req.user._id);
 
-        if (user.joinedChallenges.includes(challengeId)) {
+        const today = new Date().toISOString().split('T')[0];
+
+        // Check if already joined TODAY
+        const alreadyJoined = user.joinedChallenges.some(c => {
+            // Handle legacy string
+            if (!c.challenge) return false;
+            return c.challenge.toString() === challengeId && c.date === today;
+        });
+
+        if (alreadyJoined) {
             return res.status(400).json({ message: "Challenge already joined" });
         }
 
-        user.joinedChallenges.push(challengeId);
+        user.joinedChallenges.push({ challenge: challengeId, date: today });
         await user.save();
 
         res.json({ message: "Challenge joined! Let's do this! 🚀" });
@@ -146,12 +196,29 @@ router.get("/social/leaderboard", protect, async (req, res) => {
 
         const leaderboard = {};
 
+        const today = new Date().toISOString().split('T')[0];
+
         friends.forEach(friend => {
-            friend.completedChallenges.forEach(challengeId => {
-                if (!leaderboard[challengeId]) {
-                    leaderboard[challengeId] = [];
+            friend.completedChallenges.forEach(record => {
+                let challengeId;
+                let isToday = false;
+
+                if (record.challenge) {
+                    challengeId = record.challenge.toString();
+                    if (record.date === today) {
+                        isToday = true;
+                    }
+                } else {
+                    // Legacy: record is the ID itself, treat as old
+                    challengeId = record.toString();
                 }
-                leaderboard[challengeId].push(friend.name);
+
+                if (isToday) {
+                    if (!leaderboard[challengeId]) {
+                        leaderboard[challengeId] = [];
+                    }
+                    leaderboard[challengeId].push(friend.name);
+                }
             });
         });
 

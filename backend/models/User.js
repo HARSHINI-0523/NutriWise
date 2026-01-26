@@ -24,13 +24,11 @@ const UserSchema = new mongoose.Schema({
   emailOTPExpires: Date,
 
   completedChallenges: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Challenge'
+    type: mongoose.Schema.Types.Mixed // Allows both ObjectId (legacy) and { challenge: ObjectId, date: String } (new)
   }],
 
   joinedChallenges: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Challenge'
+    type: mongoose.Schema.Types.Mixed // Allows both ObjectId (legacy) and { challenge: ObjectId, date: String } (new)
   }],
 
   createdAt: {
