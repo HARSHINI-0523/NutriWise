@@ -230,4 +230,27 @@ router.get("/social/leaderboard", protect, async (req, res) => {
     }
 });
 
+// GET /api/challenges/history - Get list of dates with completed challenges
+router.get("/history", protect, async (req, res) => {
+    try {
+        const user = req.user;
+
+        // Extract unique dates from completedChallenges
+        // Filter out any legacy entries that might not have a date
+        const dates = new Set();
+
+        user.completedChallenges.forEach(record => {
+            if (record.date) {
+                dates.add(record.date);
+            }
+        });
+
+        res.json({ dates: Array.from(dates) });
+
+    } catch (error) {
+        console.error("Error fetching history:", error);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
 module.exports = router;

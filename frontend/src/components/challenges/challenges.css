@@ -59,12 +59,44 @@
     }
 }
 
-/* Grid Layout */
-.challenges-grid {
+/* Layout Grid with Sidebar */
+.challenges-layout-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
-    padding: 0 1rem;
+    grid-template-columns: 1fr 340px;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.challenges-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.challenges-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-promo {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 20px;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(52, 152, 219, 0.2);
+}
+
+.sidebar-promo h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-promo p {
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
 
 /* Challenge Card */
@@ -157,13 +189,16 @@
     color: #7f8c8d;
     line-height: 1.6;
     font-size: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     flex-grow: 1;
 }
 
 /* Social Leaderboard */
 .social-section {
-    min-height: 40px;
+    /* min-height removed to avoid whitespace when empty */
+}
+
+.social-section:not(:empty) {
     margin-bottom: 1rem;
 }
 
@@ -260,8 +295,39 @@
 }
 
 /* Responsive */
+@media (max-width: 1200px) {
+
+    /* When sidebar is still on right but space is tight, make list 1 column */
+    .challenges-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* Sidebar moves to top, we have full width again */
+    .challenges-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Restore 2 columns for challenges since we have width */
+    .challenges-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .challenges-sidebar {
+        order: -1;
+        /* Show calendar above list on tablet/mobile */
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
-    .challenges-grid {
+
+    /* Mobile: 1 column for everything */
+    .challenges-list {
         grid-template-columns: 1fr;
     }
 
