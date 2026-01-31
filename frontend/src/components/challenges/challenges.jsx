@@ -62,17 +62,24 @@ const Challenges = () => {
         try {
             await api.patch(`/challenges/${challengeId}/complete`);
 
-            setChallenges((prev) =>
-                prev.map((c) =>
+            setChallenges((prev) => {
+                const updated = prev.map((c) =>
                     c._id === challengeId ? { ...c, completed: true } : c
-                )
-            );
+                );
 
-            // Update history locally so calendar updates immediately
-            const today = new Date().toISOString().split('T')[0];
-            if (!history.includes(today)) {
-                setHistory(prev => [...prev, today]);
-            }
+                // Check if all 5 are now completed
+                const completedCount = updated.filter(c => c.completed).length;
+
+                // Update history locally ONLY if we just hit 5 completions
+                if (completedCount >= 5) {
+                    const today = new Date().toISOString().split('T')[0];
+                    if (!history.includes(today)) {
+                        setHistory(prevHistory => [...prevHistory, today]);
+                    }
+                }
+
+                return updated;
+            });
 
             showToast("Challenge completed! +10 Points 🎉", "success");
         } catch (error) {

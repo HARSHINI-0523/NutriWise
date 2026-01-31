@@ -297,7 +297,6 @@
 /* Responsive */
 @media (max-width: 1200px) {
 
-    /* When sidebar is still on right but space is tight, make list 1 column */
     .challenges-list {
         grid-template-columns: 1fr;
     }
@@ -305,19 +304,16 @@
 
 @media (max-width: 1024px) {
 
-    /* Sidebar moves to top, we have full width again */
     .challenges-layout-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Restore 2 columns for challenges since we have width */
     .challenges-list {
         grid-template-columns: 1fr 1fr;
     }
 
     .challenges-sidebar {
         order: -1;
-        /* Show calendar above list on tablet/mobile */
         max-width: 600px;
         margin: 0 auto;
         width: 100%;
@@ -326,7 +322,6 @@
 
 @media (max-width: 768px) {
 
-    /* Mobile: 1 column for everything */
     .challenges-list {
         grid-template-columns: 1fr;
     }
