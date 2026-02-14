@@ -6,7 +6,9 @@ const ReportViewer = () => {
   const navigate = useNavigate();
   const { state: report } = useLocation();
   console.log("ANALYSIS RAW => ", report.analysis);
+  console.log("VALUES RAW => ", report.values);
 
+  
   if (!report) {
     return (
       <div className="viewer-container">
@@ -75,7 +77,8 @@ const ReportViewer = () => {
             .replace(/\\n/g, "\n") // convert escaped → real newlines
             .replace(/\\"/g, '"')}{" "}
           // optional: fix escaped quotes
-        </div>
+        </div> 
+        
 
         <div className="ai-warning">
           ⚠️ AI-generated insights only. Consult a doctor for diagnosis.

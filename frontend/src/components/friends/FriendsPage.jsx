@@ -18,7 +18,7 @@ const FriendsPage = () => {
   
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  
+  console.log(userId);
   useEffect(() => {
     // Set the active sidebar to null, which will cause it to unmount
     setSidebarMode(null);
@@ -61,6 +61,7 @@ const FriendsPage = () => {
       setFriends(friendsRes.data);
       setRequests(requestsRes.data);
       setSuggestions(suggestionsRes.data);
+      
     } catch (error) {
       console.error("Failed to load data:", error);
     } finally {

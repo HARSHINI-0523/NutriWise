@@ -52,7 +52,7 @@ const Header = () => {
                         Diet Plans
                     </Link>
                     <Link to="/challenges">Challenges</Link>
-                    <Link to="/community">Community</Link>
+                    
                     <Link to="/friends">Friends</Link>
                 </div>
                 

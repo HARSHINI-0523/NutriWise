@@ -2,7 +2,7 @@
 const DietPlan = require("../models/DietPlan");
 const Food = require("../models/Food");
 const Report = require("../models/Report");
-const UserDetails = require("../models/userDetails");
+const UserDetails = require("../models/UserDetails");
 const { generateWeeklyPlan } = require("../services/dietGenerator");
 
 exports.generateDiet = async (req, res) => {

@@ -51,7 +51,7 @@ exports.getReceivedRequests = async (req, res) => {
       recipient: uid,
       status: "pending",
     }).populate("requester", "name email");
-
+  
     res.json(requests);
   } catch (err) {
     console.error("getReceivedRequests error:", err);
@@ -96,7 +96,7 @@ exports.handleRequest = async (req, res) => {
 // --------------------------------------
 exports.getSuggestions = async (req, res) => {
   const { userId } = req.params;
-
+  
   try {
     const uid = new mongoose.Types.ObjectId(userId);
 
@@ -135,7 +135,6 @@ exports.getSuggestions = async (req, res) => {
     const suggestions = await User.find({
       _id: { $in: [...suggestionIds].map(id => new mongoose.Types.ObjectId(id)) },
     }).select("name email");
-
     res.json(suggestions);
   } catch (err) {
     console.error("getSuggestions error:", err);

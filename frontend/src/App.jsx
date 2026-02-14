@@ -17,6 +17,7 @@ import VerifyEmail from "./components/verifyEmail/VerifyEmail.jsx";
 import GenerateDietPlan from "./components/generateDietPlan/GenerateDietPlan.jsx";
 import ReportViewer from "./components/reportViewer/ReportViewer.jsx";
 import Challenges from "./components/challenges/Challenges.jsx";
+import  DietPlanWeeklyPage from "./components/weeklyPlan/weeklyDietPlan.jsx";
 //Contexts
 import { UserLoginProvider } from "./contexts/UserLoginContext";
 import { ToastProvider } from "./contexts/ToastContext.jsx";
@@ -24,7 +25,7 @@ import { SidebarProvider } from "./contexts/SidebarContext.jsx";
 
 function App() {
   const ReportsPage = () => <h1>Reports Content</h1>;
-  const DietPlansPage = () => <h1>Diet Plans Content</h1>;
+  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -53,8 +54,9 @@ function App() {
         { path: "/reports/analysis", element: <ReportsPage /> },
         { path: "/myreports/view/:id", element: <ReportViewer /> },
 
+      
         { path: "/diet-plans/generate", element: <GenerateDietPlan /> },
-        { path: "/diet-plans/weekly", element: <DietPlansPage /> },
+        { path: "/diet-plans/weekly", element: <DietPlanWeeklyPage /> },
         { path: "/friends", element: <FriendsPage /> },
         { path: "/checkup-calendar", element: <CheckupCalendar /> },
         { path: "/challenges", element: <Challenges /> }
